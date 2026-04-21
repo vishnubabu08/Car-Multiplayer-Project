@@ -1,0 +1,113 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/NeonDriveStyles.uss?fileID=7433441132597879392&amp;guid=f03e6da12a99d3c43afcc2de11ded981&amp;type=3#NeonDriveStyles"/>
+    <ui:VisualElement class="root-container">
+        <ui:VisualElement name="bg-image" class="background-image-container"/>
+        <ui:VisualElement class="background-gradient"/>
+        <ui:VisualElement class="top-bar">
+            <ui:Label text="NEON_DRIVE" class="text-cyan font-black" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            <ui:VisualElement class="currency-badge">
+                <ui:Label name="txt-money" text="15,400 CR" class="text-cyan font-black" style="font-size: 16px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" mode="Vertical" vertical-page-size="-1" name="ScrollView" style="padding: 24px; padding-bottom: 100px; flex-grow: 1; background-color: rgba(0, 0, 0, 0); opacity: 1;">
+            <ui:VisualElement name="VisualElement" class="race-button-container" style="flex-direction: column-reverse; height: 0; width: 227px; scale: 0.3 0.3 0.3; translate: -70px 22px;">
+                <ui:Button name="btn-race" text="LVL42 &gt;&gt;" class="race-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;); -unity-background-image-tint-color: rgb(255, 255, 255); scale: 1 1; translate: 0 0; rotate: 0; -unity-slice-type: sliced; background-color: rgb(195, 244, 0); transform-origin: left top;"/>
+            </ui:VisualElement>
+            <ui:VisualElement style="margin-bottom: 40px;">
+                <ui:Label text=" ELITE PILOT" class="text-muted" style="-unity-font-style: bold; font-size: 12px; translate: 73px 0;"/>
+                <ui:Label text="VORTEX_RUNNER" class="font-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="VisualElement" class="race-button-container">
+                <ui:Button name="btn-race" text="RACE &gt;&gt;" class="race-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;); -unity-background-image-tint-color: rgb(255, 255, 255);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="grid-container">
+                <ui:VisualElement class="card card-garage" style="opacity: 1; background-color: rgba(26, 28, 32, 0.78);">
+                    <ui:Label text="MY FLEET: 12" class="text-muted" style="font-size: 10px; margin-bottom: 16px; -unity-font-style: italic;"/>
+                    <ui:Label text="GARAGE" class="text-cyan font-black" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="card card-shop" style="background-color: rgba(26, 28, 32, 0.78);">
+                    <ui:Label text="NEW ARRIVALS" class="text-muted" style="font-size: 10px; margin-bottom: 16px; -unity-font-style: italic;"/>
+                    <ui:Label text="SHOP" class="text-lime font-black" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="card card-multi" style="background-color: rgba(26, 28, 32, 0.78);">
+                    <ui:Label text="ONLINE NOW" class="text-pink" style="font-size: 10px; margin-bottom: 16px; -unity-font-style: bold-and-italic;"/>
+                    <ui:Label text="MULTIPLAYER" class="font-black" style="font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="card card-story" style="background-color: rgba(26, 28, 32, 0.78);">
+                    <ui:Label text="PROGRESS: 68%" class="text-muted" style="font-size: 10px; margin-bottom: 16px; -unity-font-style: italic;"/>
+                    <ui:Label text="STORY" class="font-black" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="panel panel-stats">
+                <ui:Label text="VEHICLE_STATS" class="text-cyan font-black" style="font-size: 14px; margin-bottom: 16px;"/>
+                <ui:VisualElement class="stat-row">
+                    <ui:VisualElement class="stat-labels">
+                        <ui:Label text="SPEED" class="text-muted" style="font-size: 10px;"/>
+                        <ui:Label text="342 KM/H" class="text-muted" style="font-size: 10px;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="progress-track">
+                        <ui:VisualElement class="progress-fill-cyan" style="width: 88%;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="stat-row">
+                    <ui:VisualElement class="stat-labels">
+                        <ui:Label text="HANDLING" class="text-muted" style="font-size: 10px;"/>
+                        <ui:Label text="A+ CLASS" class="text-muted" style="font-size: 10px;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="progress-track">
+                        <ui:VisualElement class="progress-fill-cyan" style="width: 72%;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="stat-row">
+                    <ui:VisualElement class="stat-labels">
+                        <ui:Label text="NITROUS" class="text-muted" style="font-size: 10px;"/>
+                        <ui:Label text="OVERDRIVE" class="text-muted" style="font-size: 10px;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="progress-track">
+                        <ui:VisualElement class="progress-fill-lime" style="width: 95%;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="panel panel-news">
+                <ui:Label text="TRANSMISSIONS" class="text-pink font-black" style="font-size: 14px; margin-bottom: 16px;"/>
+                <ui:VisualElement class="news-item">
+                    <ui:VisualElement class="news-bar-lime"/>
+                    <ui:VisualElement>
+                        <ui:Label text="NEW SEASON STARTING" style="font-size: 12px; -unity-font-style: bold-and-italic; margin-bottom: 2px;"/>
+                        <ui:Label text="Tokyo Underground circuits now open." class="text-muted" style="font-size: 10px; white-space: normal;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="news-item">
+                    <ui:VisualElement class="news-bar-cyan"/>
+                    <ui:VisualElement>
+                        <ui:Label text="PART_VENDORS_RESTOCKED" style="font-size: 12px; -unity-font-style: bold-and-italic; margin-bottom: 2px;"/>
+                        <ui:Label text="Tier-4 Carbon turbos available now." class="text-muted" style="font-size: 10px; white-space: normal;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:VisualElement class="bottom-nav">
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="GARAGE" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="SOCIAL" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="nav-race" class="nav-item nav-item-active">
+                <ui:Label text="RACE" style="font-size: 12px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="VisualElement" class="nav-item">
+                <ui:Label text="SHOP" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RANK" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="TRACK" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="SETTIGS" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

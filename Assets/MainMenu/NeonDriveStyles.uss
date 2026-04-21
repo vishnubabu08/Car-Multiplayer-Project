@@ -1,0 +1,246 @@
+:root {
+    --bg-surface: rgb(17, 19, 24);
+    --neon-cyan: rgb(0, 229, 255);
+    --neon-lime: rgb(195, 244, 0);
+    --neon-orange: rgb(255, 87, 19);
+    --neon-pink: rgb(255, 181, 157);
+    --gray-outline: rgb(132, 147, 150);
+    --text-muted: rgb(186, 201, 204);
+    --glass-panel: rgba(26, 28, 32, 0.6);
+}
+
+.root-container {
+    flex-grow: 1;
+    background-color: var(--bg-surface);
+    color: white;
+}
+
+.background-image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-and-crop;
+    background-image: url("project://database/Assets/Gemini_Generated_Image_2e46n92e46n92e46.png?fileID=2800000&guid=9227707a690634646a98bb93fbabc684&type=3#Gemini_Generated_Image_2e46n92e46n92e46");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    color: rgb(27, 27, 27);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.background-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 19, 24, 0.85);
+}
+
+.text-cyan {
+    color: var(--neon-cyan);
+}
+
+.text-lime {
+    color: var(--neon-lime);
+}
+
+.text-pink {
+    color: var(--neon-pink);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.font-black {
+    -unity-font-style: bold-and-italic;
+    font-size: 24px;
+}
+
+.font-title {
+    -unity-font-style: bold-and-italic;
+    font-size: 48px;
+}
+
+.top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: rgba(17, 19, 24, 0.8);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(59, 73, 76, 0.3);
+}
+
+.currency-badge {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(30, 32, 36);
+    padding: 4px 16px;
+    border-left-width: 3px;
+    border-left-color: var(--neon-cyan);
+    rotate: -5deg;
+}
+
+.race-button-container {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.race-button {
+    background-color: var(--neon-orange);
+    color: rgb(82, 20, 0);
+    font-size: 36px;
+    -unity-font-style: bold-and-italic;
+    padding: 20px 48px;
+    border-width: 0;
+    rotate: -5deg;
+}
+
+.grid-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.card {
+    width: 48%;
+    background-color: var(--glass-panel);
+    border-left-width: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.card-garage {
+    border-left-color: var(--neon-cyan);
+}
+
+.card-shop {
+    border-left-color: var(--neon-lime);
+}
+
+.card-multi {
+    border-left-color: var(--neon-pink);
+}
+
+.card-story {
+    border-left-color: var(--gray-outline);
+}
+
+.panel {
+    background-color: var(--glass-panel);
+    padding: 24px;
+    margin-top: 24px;
+    border-left-width: 2px;
+}
+
+.panel-stats {
+    border-left-color: rgba(0, 229, 255, 0.2);
+}
+
+.panel-news {
+    border-left-color: rgba(255, 181, 157, 0.2);
+}
+
+.stat-row {
+    margin-bottom: 12px;
+}
+
+.stat-labels {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.progress-track {
+    height: 4px;
+    background-color: rgb(51, 53, 57);
+}
+
+.progress-fill-cyan {
+    height: 100%;
+    background-color: var(--neon-cyan);
+}
+
+.progress-fill-lime {
+    height: 100%;
+    background-color: var(--neon-lime);
+}
+
+.news-item {
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.news-bar-lime {
+    width: 4px;
+    height: 32px;
+    background-color: var(--neon-lime);
+    margin-right: 12px;
+}
+
+.news-bar-cyan {
+    width: 4px;
+    height: 32px;
+    background-color: var(--neon-cyan);
+    margin-right: 12px;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(17, 19, 24, 0.95);
+    padding: 10px 0;
+    border-top-width: 1px;
+    border-top-color: rgba(59, 73, 76, 0.3);
+}
+
+.nav-item {
+    align-items: center;
+    color: rgba(195, 245, 255, 0.5);
+}
+
+.nav-item-active {
+    background-color: var(--neon-cyan);
+    color: rgb(17, 19, 24);
+    padding: 8px 24px;
+    rotate: -5deg;
+}
+/* =========================================
+   SCROLLBAR STYLING (Cyberpunk Theme)
+   ========================================= */
+
+/* 1. Hide the chunky Up/Down arrow buttons */
+.unity-scroll-view .unity-scroller--vertical #unity-low-button,
+.unity-scroll-view .unity-scroller--vertical #unity-high-button {
+    display: none;
+}
+
+/* 2. The Tracker (The background track) */
+.unity-scroll-view .unity-scroller--vertical #unity-tracker {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: rgba(17, 19, 24, 0.8); 
+    border-width: 0; 
+    width: 4px; 
+    margin-left: 6px; 
+}
+
+/* 3. The Dragger (The part you actually grab/scroll) */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: #00E5FF; /* Hardcoded Neon Cyan */
+    border-radius: 4px; 
+    border-width: 0;
+    width: 8px; 
+    left: 4px; 
+}
+
+/* 4. The Dragger Touch Effect */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:hover {
+    background-color: #c3f5ff; /* Slightly brighter when mouse hovers */
+}
+
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:active {
+    background-color: #ffffff; /* Flashes white when touched */
+}

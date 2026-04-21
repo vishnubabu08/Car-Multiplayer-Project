@@ -1,0 +1,123 @@
+/* =========================================
+   SELECT TRACK DESIGN SYSTEM
+   ========================================= */
+:root {
+    --bg-surface: #111318;
+    --surface-container-low: #1a1c20;
+    --surface-container-high: #282a2e;
+    --surface-container-highest: #333539;
+    
+    --primary-container: #00e5ff; /* Neon Cyan */
+    --secondary-container: #ff5713; /* Medium / Orange */
+    --tertiary: #cdff13; /* Easy / Lime */
+    --error: #ffb4ab; /* Hard / Red */
+    
+    --outline-variant: #3b494c;
+    --text-muted: #bac9cc;
+    --text-dark: #00363d;
+}
+
+* { border-radius: 0; }
+.root-container { flex-grow: 1; background-color: var(--bg-surface); color: white; width: 100%; height: 100%; flex-direction: column; }
+
+/* Typography */
+.font-black { -unity-font-style: bold-and-italic; text-transform: uppercase; }
+.text-cyan { color: var(--primary-container); }
+.text-orange { color: var(--secondary-container); }
+.text-lime { color: var(--tertiary); }
+.text-red { color: var(--error); }
+.text-muted { color: var(--text-muted); }
+
+/* TOP BAR (Fixed to top) */
+.top-bar { flex-shrink: 0; flex-direction: row; justify-content: space-between; align-items: center; padding: 16px 24px; background-color: rgba(17, 19, 24, 0.9); border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.3); }
+.top-bar-left { flex-direction: row; align-items: center; }
+.btn-back { background-color: transparent; border-width: 0; color: var(--primary-container); font-size: 20px; -unity-font-style: bold; margin-right: 16px; transition: scale 0.1s; }
+.btn-back:active { scale: 0.9 0.9; }
+.top-bar-right { flex-direction: row; align-items: center; }
+.nav-links { flex-direction: row; margin-right: 24px; }
+.nav-link { color: rgba(195, 245, 255, 0.6); margin-left: 24px; font-size: 12px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+.nav-link-active { color: #fff; -unity-font-style: bold-and-italic; }
+
+/* MAIN CONTENT */
+.main-content { padding: 24px 48px; padding-bottom: 120px; flex-direction: column; }
+
+/* HERO SECTION */
+.hero-section { width: 100%; height: 280px; background-color: var(--surface-container-high); border-left-width: 4px; border-left-color: var(--primary-container); margin-bottom: 32px; flex-direction: column; justify-content: flex-end; padding: 24px; -unity-background-scale-mode: scale-and-crop; }
+.hero-badge { align-self: flex-start; background-color: var(--secondary-container); color: #fff; padding: 4px 8px; font-size: 10px; -unity-font-style: bold-and-italic; margin-bottom: 8px; }
+.hero-title { font-size: 48px; color: #fff; -unity-font-style: bold-and-italic; margin-bottom: -10px; }
+.hero-subtitle { font-size: 48px; color: var(--primary-container); -unity-font-style: bold-and-italic; margin-bottom: 16px; }
+
+.hero-stats-row { flex-direction: row; align-items: flex-end; }
+.hero-stat-block { flex-direction: column; margin-right: 32px; padding-left: 16px; border-left-width: 1px; border-left-color: rgba(255,255,255,0.2); }
+.hero-stat-label { font-size: 10px; color: var(--text-muted); -unity-font-style: bold; text-transform: uppercase; margin-bottom: 4px; }
+.hero-stat-value { font-size: 16px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+
+/* TRACK GRID (3 Columns) */
+.track-grid { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; }
+
+/* TRACK CARDS */
+.track-card { width: 32%; background-color: var(--surface-container-low); margin-right: 1.33%; margin-bottom: 24px; flex-direction: column; transition: scale 0.1s; }
+.track-card:hover { scale: 1.02 1.02; }
+.track-image-box { width: 100%; height: 140px; background-color: var(--surface-container-highest); -unity-background-scale-mode: scale-and-crop; position: relative; }
+.track-badge-tr { position: absolute; top: 8px; right: 8px; background-color: rgba(17,19,24,0.8); padding: 4px 8px; border-width: 1px; border-color: rgba(255,255,255,0.1); flex-direction: row; align-items: center; }
+
+.track-content { padding: 16px; flex-grow: 1; }
+.track-title { font-size: 16px; color: #fff; -unity-font-style: bold-and-italic; margin-bottom: 2px; }
+.track-subtitle { font-size: 8px; color: var(--text-muted); -unity-font-style: bold; text-transform: uppercase; margin-bottom: 16px; }
+
+.track-footer-row { flex-direction: row; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; }
+.diff-container { flex-direction: column; }
+.diff-bars { flex-direction: row; margin-bottom: 4px; gap: 2px; }
+.diff-bar { width: 12px; height: 4px; background-color: var(--surface-container-highest); }
+.diff-bar-lime { background-color: var(--tertiary); }
+.diff-bar-orange { background-color: var(--secondary-container); }
+.diff-bar-red { background-color: var(--error); }
+.diff-label { font-size: 10px; -unity-font-style: bold; text-transform: uppercase; }
+.track-distance { font-size: 14px; color: #fff; -unity-font-style: bold-and-italic; }
+
+/* DRIVE BUTTON */
+.btn-drive { background-color: var(--primary-container); color: var(--text-dark); -unity-font-style: bold-and-italic; font-size: 16px; padding: 12px; border-width: 0; text-transform: uppercase; transition: background-color 0.1s; margin: 0 16px 16px 16px; }
+.btn-drive:active { background-color: #fff; }
+
+/* BOTTOM NAV BAR */
+.bottom-nav { position: absolute; bottom: 0; width: 100%; flex-direction: row; justify-content: space-around; background-color: rgba(17, 19, 24, 0.95); padding: 12px 0; border-top-width: 1px; border-top-color: rgba(59, 73, 76, 0.3); }
+.nav-item { align-items: center; color: rgba(195, 245, 255, 0.5); font-size: 10px; -unity-font-style: bold; text-transform: uppercase; }
+.nav-item-active { background-color: rgba(0, 229, 255, 0.1); color: var(--primary-container); padding: 8px 32px; border-bottom-width: 2px; border-bottom-color: var(--primary-container); }
+
+/* =========================================
+   SCROLLBAR STYLING (Cyberpunk Theme)
+   ========================================= */
+
+/* 1. Hide the chunky Up/Down arrow buttons */
+.unity-scroll-view .unity-scroller--vertical #unity-low-button,
+.unity-scroll-view .unity-scroller--vertical #unity-high-button {
+    display: none;
+}
+
+/* 2. The Tracker (The background track) */
+.unity-scroll-view .unity-scroller--vertical #unity-tracker {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: rgba(17, 19, 24, 0.8); 
+    border-width: 0; 
+    width: 4px; 
+    margin-left: 6px; 
+}
+
+/* 3. The Dragger (The part you actually grab/scroll) */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: #00E5FF; /* Hardcoded Neon Cyan */
+    border-radius: 4px; 
+    border-width: 0;
+    width: 8px; 
+    left: 4px; 
+}
+
+/* 4. The Dragger Touch Effect */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:hover {
+    background-color: #c3f5ff; /* Slightly brighter when mouse hovers */
+}
+
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:active {
+    background-color: #ffffff; /* Flashes white when touched */
+}

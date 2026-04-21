@@ -1,0 +1,133 @@
+/* =========================================
+   MULTIPLAYER LOBBY DESIGN SYSTEM
+   ========================================= */
+:root {
+    --bg-surface: #111318;
+    --surface-container-low: #1a1c20;
+    --surface-container-high: #282a2e;
+    --surface-container-highest: #333539;
+    
+    --primary-container: #00e5ff; /* Neon Cyan */
+    --secondary-container: #ff5713; /* Neon Orange */
+    --tertiary: #cdff13; /* Neon Lime */
+    
+    --outline-variant: #3b494c;
+    --text-muted: #bac9cc;
+    --text-dark: #00363d;
+}
+
+* { border-radius: 0; }
+.root-container { flex-grow: 1; background-color: var(--bg-surface); color: white; width: 100%; height: 100%; flex-direction: column; }
+
+/* Typography */
+.font-black { -unity-font-style: bold-and-italic; }
+.font-headline { font-size: 14px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+.text-cyan { color: var(--primary-container); }
+.text-orange { color: var(--secondary-container); }
+.text-lime { color: var(--tertiary); }
+.text-muted { color: var(--text-muted); }
+
+/* TOP BAR (Fixed to top) */
+.top-bar { flex-shrink: 0; flex-direction: row; justify-content: space-between; align-items: center; padding: 16px 24px; background-color: rgba(17, 19, 24, 0.9); border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.3); }
+.top-bar-left { flex-direction: row; align-items: center; }
+.icon-box-cyan { width: 32px; height: 32px; background-color: var(--surface-container-high); border-left-width: 3px; border-left-color: var(--primary-container); align-items: center; justify-content: center; margin-right: 12px; }
+.top-bar-right { flex-direction: row; align-items: center; }
+.nav-links { flex-direction: row; margin-right: 24px; }
+.nav-link { color: rgba(195, 245, 255, 0.6); margin-left: 24px; font-size: 12px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+.nav-link-active { color: var(--primary-container); -unity-font-style: bold-and-italic; }
+.currency-badge { background-color: var(--surface-container-high); padding: 6px 16px; border-right-width: 2px; border-right-color: var(--primary-container); margin-right: 16px; }
+
+/* MAIN CONTENT SPLIT - FORCED WIDTHS */
+.main-content { padding: 32px 48px; padding-bottom: 120px; flex-direction: column; }
+.hero-header { margin-bottom: 24px; }
+.main-row { flex-direction: row; justify-content: space-between; width: 100%; }
+
+/* Left Col: 33%, Right Col: 65% ensures it never breaks */
+.left-col { width: 33%; padding-right: 16px; flex-direction: column; }
+.right-col { width: 65%; flex-direction: column; }
+
+/* LEFT COL: ACTIONS & CHAT */
+.btn-quick-join { background-color: var(--primary-container); color: var(--text-dark); font-size: 16px; -unity-font-style: bold-and-italic; text-transform: uppercase; padding: 16px; border-width: 0; margin-bottom: 8px; justify-content: center; align-items: center; transition: scale 0.1s; }
+.btn-quick-join:active { scale: 0.98 0.98; background-color: #fff; }
+.btn-outline { background-color: var(--surface-container-low); border-width: 1px; border-color: var(--outline-variant); color: #fff; font-size: 14px; -unity-font-style: bold-and-italic; text-transform: uppercase; padding: 14px 16px; margin-bottom: 8px; justify-content: center; align-items: center; transition: border-color 0.1s; }
+.btn-outline:hover { border-color: var(--primary-container); }
+
+.input-row { flex-direction: row; margin-bottom: 16px; height: 45px; }
+.room-input { flex-grow: 1; background-color: var(--surface-container-low); border-bottom-width: 2px; border-bottom-color: var(--outline-variant); color: #fff; padding-left: 16px; -unity-font-style: bold-and-italic; }
+.btn-enter { width: 50px; background-color: var(--surface-container-highest); border-width: 0; color: #fff; align-items: center; justify-content: center; }
+
+/* TACTICAL COMMS */
+.chat-panel { background-color: var(--surface-container-low); border-left-width: 4px; border-left-color: var(--tertiary); padding: 16px; flex-grow: 1; min-height: 200px; }
+.chat-header { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.chat-message { flex-direction: row; margin-bottom: 8px; }
+.chat-sender { font-size: 10px; -unity-font-style: bold-and-italic; margin-right: 8px; }
+.chat-text { font-size: 10px; color: #fff; white-space: normal; flex-shrink: 1; }
+.chat-input { background-color: transparent; border-width: 0; border-top-width: 1px; border-top-color: rgba(59, 73, 76, 0.3); color: #fff; padding-top: 12px; margin-top: auto; font-size: 10px; -unity-font-style: italic; }
+
+/* RIGHT COL: CURRENT GRID */
+.grid-header-row { flex-direction: row; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.3); padding-bottom: 8px; }
+.player-grid { flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
+
+/* PLAYER CARDS - Forced 48% width so 2 fit perfectly per row */
+.player-card { width: 48.5%; background-color: var(--surface-container-high); padding: 2px; margin-bottom: 16px; transition: scale 0.1s; }
+.player-card-inner { background-color: var(--surface-container-low); padding: 12px; }
+.player-top-row { flex-direction: row; justify-content: space-between; margin-bottom: 12px; }
+.avatar-box { width: 40px; height: 40px; border-width: 1px; margin-right: 12px; }
+.player-car-img { width: 100%; height: 80px; background-color: var(--surface-container-highest); margin-bottom: 12px; -unity-background-scale-mode: scale-and-crop; justify-content: flex-end; }
+.car-name-badge { background-color: rgba(17, 19, 24, 0.8); padding: 2px 8px; font-size: 8px; -unity-font-style: bold-and-italic; align-self: flex-start; margin-left: 8px; margin-bottom: 8px; }
+
+/* STATUS & BARS */
+.card-bottom-row { flex-direction: row; justify-content: space-between; align-items: center; }
+.status-bars { flex-direction: row; gap: 4px; }
+.status-bar { width: 4px; height: 16px; }
+.status-badge { padding: 4px 12px; font-size: 10px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+
+/* INVITE SLOT */
+.invite-slot { width: 48.5%; border-width: 2px; border-color: rgba(59, 73, 76, 0.3); border-radius: 0; background-color: transparent; align-items: center; justify-content: center; margin-bottom: 16px; opacity: 0.5; transition: opacity 0.1s, border-color 0.1s; }
+.invite-slot:hover { opacity: 1; border-color: var(--primary-container); }
+
+/* FLOATING ACTION BUTTON (START RACE) */
+.fab-start-race { position: absolute; bottom: 80px; right: 48px; background-color: var(--tertiary); color: var(--text-dark); padding: 16px 32px; font-size: 18px; -unity-font-style: bold-and-italic; text-transform: uppercase; border-width: 0; transition: scale 0.1s; z-index: 50; }
+.fab-start-race:active { scale: 0.95 0.95; background-color: #fff; }
+
+/* BOTTOM NAV BAR (Fixed to Bottom) */
+.bottom-nav { position: absolute; bottom: 0; width: 100%; flex-direction: row; justify-content: space-around; background-color: rgba(17, 19, 24, 0.95); padding: 12px 0; border-top-width: 1px; border-top-color: rgba(59, 73, 76, 0.3); }
+.nav-item { align-items: center; color: rgba(195, 245, 255, 0.5); font-size: 10px; -unity-font-style: bold; text-transform: uppercase; }
+.nav-item-active { background-color: rgba(0, 229, 255, 0.1); color: var(--primary-container); padding: 8px 32px; border-bottom-width: 2px; border-bottom-color: var(--primary-container); }
+/* =========================================
+   SCROLLBAR STYLING (Cyberpunk Theme)
+   ========================================= */
+
+/* 1. Hide the chunky Up/Down arrow buttons */
+.unity-scroll-view .unity-scroller--vertical #unity-low-button,
+.unity-scroll-view .unity-scroller--vertical #unity-high-button {
+    display: none;
+}
+
+/* 2. The Tracker (The background track) */
+.unity-scroll-view .unity-scroller--vertical #unity-tracker {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: rgba(17, 19, 24, 0.8); 
+    border-width: 0; 
+    width: 4px; 
+    margin-left: 6px; 
+}
+
+/* 3. The Dragger (The part you actually grab/scroll) */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: #00E5FF; /* Hardcoded Neon Cyan */
+    border-radius: 4px; 
+    border-width: 0;
+    width: 8px; 
+    left: 4px; 
+}
+
+/* 4. The Dragger Touch Effect */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:hover {
+    background-color: #c3f5ff; /* Slightly brighter when mouse hovers */
+}
+
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:active {
+    background-color: #ffffff; /* Flashes white when touched */
+}

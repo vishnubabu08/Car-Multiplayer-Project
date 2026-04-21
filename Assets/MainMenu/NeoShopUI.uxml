@@ -1,0 +1,179 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/NeoShopStyles.uss?fileID=7433441132597879392&amp;guid=16392621fa87ff546adbc004edc45b8f&amp;type=3#NeoShopStyles"/>
+    <ui:VisualElement class="root-container">
+        <ui:VisualElement class="top-bar">
+            <ui:VisualElement class="top-bar-left">
+                <ui:VisualElement class="icon-box-cyan">
+                    <ui:Label text="U" style="color: rgb(0, 229, 255); -unity-font-style: bold;"/>
+                </ui:VisualElement>
+                <ui:Label text="NEO-SHOP" class="font-black text-cyan" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="top-bar-right">
+                <ui:VisualElement class="currency-badge" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                    <ui:Label text="1,250,000 CR" class="font-black text-cyan" style="font-size: 14px;"/>
+                </ui:VisualElement>
+                <ui:Label text="B" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView mode="Vertical" class="main-content">
+            <ui:VisualElement style="margin-bottom: 4px;">
+                <ui:Label text="LIMITED TIME" class="text-lime" style="font-size: 10px; -unity-font-style: bold; letter-spacing: 2px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="section-header-row">
+                <ui:Label text="DAILY DEALS" class="font-black" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                <ui:VisualElement class="nav-arrows">
+                    <ui:Button text="&lt;" class="arrow-btn"/>
+                    <ui:Button text="&gt;" class="arrow-btn"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="deals-container">
+                <ui:VisualElement class="deal-card">
+                    <ui:VisualElement name="img-turbo" class="deal-image-container" style="background-image: url(&quot;project://database/Assets/Turbocharger%20close-up%20in%20industrial%20workshop.png?fileID=2800000&amp;guid=6f30f82785828414683c99447aacbf5b&amp;type=3#Turbocharger close-up in industrial workshop&quot;);"/>
+                    <ui:VisualElement class="deal-content">
+                        <ui:VisualElement class="deal-title-row">
+                            <ui:VisualElement>
+                                <ui:Label text="HYPER-TURBO KIT" class="font-black text-cyan" style="font-size: 16px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                                <ui:Label text="LEGENDARY PERFORMANCE" class="text-muted" style="font-size: 8px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:Label text="-25%" class="discount-badge-orange"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="deal-stats-row">
+                            <ui:VisualElement class="stat-box stat-box-lime">
+                                <ui:Label text="POWER GAIN" class="stat-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="+145 HP" class="stat-value"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="stat-box stat-box-gray">
+                                <ui:Label text="WEIGHT RED." class="stat-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="-12 KG" class="stat-value"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button text="CLAIM 85,000 CR" class="claim-btn btn-cyan" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="deal-card">
+                    <ui:VisualElement name="img-nos" class="deal-image-container" style="background-image: url(&quot;project://database/Assets/Industrial%20hazard%20tank%20in%20sci-fi%20setting.png?fileID=2800000&amp;guid=565080e5f53b97c468e2ae2b65a48aed&amp;type=3#Industrial hazard tank in sci-fi setting&quot;);"/>
+                    <ui:VisualElement class="deal-content">
+                        <ui:VisualElement class="deal-title-row">
+                            <ui:VisualElement>
+                                <ui:Label text="EXPERIMENTAL NOS" class="font-black text-orange" style="font-size: 16px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                                <ui:Label text="PROTOTYPE TECH" class="text-muted" style="font-size: 8px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:Label text="-40%" class="discount-badge-orange"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="deal-stats-row">
+                            <ui:VisualElement class="stat-box stat-box-orange">
+                                <ui:Label text="BURST DUR." class="stat-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="6.5 SEC" class="stat-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="stat-box stat-box-red">
+                                <ui:Label text="RELIABILITY" class="stat-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="LOW" class="stat-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button text="CLAIM 42,000 CR" class="claim-btn btn-orange" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="parts-header-row">
+                <ui:Label text="PERFORMANCE PARTS" class="font-black" style="font-size: 18px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                <ui:VisualElement class="header-line"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="parts-container">
+                <ui:VisualElement class="part-item">
+                    <ui:VisualElement name="img-tires" class="part-img" style="background-image: url(&quot;project://database/Assets/unnamed%20(1).png?fileID=2800000&amp;guid=522e5a05aa412d94faed42988165be61&amp;type=3#unnamed (1)&quot;);"/>
+                    <ui:VisualElement class="part-info">
+                        <ui:Label text="VULCAN TIRES V2" class="part-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="GRIP &amp; TRACTION" class="part-subtitle" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: flex-end; margin-top: 4px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                            <ui:Label text="12,500 CR" class="font-black text-cyan" style="font-size: 12px;"/>
+                            <ui:Button text="BUY" class="buy-btn"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="part-item">
+                    <ui:VisualElement name="img-exhaust" class="part-img" style="background-image: url(&quot;project://database/Assets/unnamed.png?fileID=2800000&amp;guid=33809e91fd4a6e344bf58b08845e5715&amp;type=3#unnamed&quot;);"/>
+                    <ui:VisualElement class="part-info">
+                        <ui:Label text="TITANIUM EXHAUST" class="part-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="WEIGHT &amp; SOUND" class="part-subtitle" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: flex-end; margin-top: 4px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                            <ui:Label text="28,000 CR" class="font-black text-cyan" style="font-size: 12px;"/>
+                            <ui:Button text="BUY" class="buy-btn"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="part-item">
+                    <ui:VisualElement name="img-splitter" class="part-img" style="background-image: url(&quot;project://database/Assets/unnamed%20(2).png?fileID=2800000&amp;guid=527b9fe0f347a604fb22550e0348ed29&amp;type=3#unnamed (2)&quot;);"/>
+                    <ui:VisualElement class="part-info">
+                        <ui:Label text="CARBON SPLITTER" class="part-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="DOWNFORCE" class="part-subtitle" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: flex-end; margin-top: 4px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                            <ui:Label text="15,000 CR" class="font-black text-cyan" style="font-size: 12px;"/>
+                            <ui:Button text="BUY" class="buy-btn"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="parts-header-row" style="margin-top: 32px;">
+                <ui:Label text="CURRENCY PACKS" class="font-black" style="font-size: 18px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                <ui:VisualElement class="header-line"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="packs-container">
+                <ui:VisualElement class="pack-card" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                    <ui:Label text="POPULAR" class="pack-badge pack-badge-cyan"/>
+                    <ui:VisualElement class="pack-icon">
+                        <ui:Label text="D" class="font-black text-cyan" style="font-size: 32px;"/>
+                    </ui:VisualElement>
+                    <ui:Label text="STARTER PACK" class="pack-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="500,000 CR" class="pack-amount text-cyan" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement class="pack-divider"/>
+                    <ui:Label text="$4.99" class="pack-price"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="pack-card" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                    <ui:VisualElement class="pack-icon">
+                        <ui:Label text="L" class="font-black text-cyan" style="font-size: 32px;"/>
+                    </ui:VisualElement>
+                    <ui:Label text="RACER BUNDLE" class="pack-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="1,500,000 CR" class="pack-amount text-cyan" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement class="pack-divider"/>
+                    <ui:Label text="$12.99" class="pack-price"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="pack-card" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                    <ui:Label text="BEST VALUE" class="pack-badge pack-badge-lime"/>
+                    <ui:VisualElement class="pack-icon">
+                        <ui:Label text="T" class="font-black text-lime" style="font-size: 32px;"/>
+                    </ui:VisualElement>
+                    <ui:Label text="PREMIUM TOKENS" class="pack-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="5,000 TOKENS" class="pack-amount text-lime" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement class="pack-divider"/>
+                    <ui:Label text="$19.99" class="pack-price"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="pack-card" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                    <ui:VisualElement class="pack-icon">
+                        <ui:Label text="W" class="font-black text-cyan" style="font-size: 32px;"/>
+                    </ui:VisualElement>
+                    <ui:Label text="WHALE VAULT" class="pack-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="10,000,000 CR" class="pack-amount text-cyan" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement class="pack-divider"/>
+                    <ui:Label text="$49.99" class="pack-price"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:VisualElement class="bottom-nav" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="GARAGE"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="SOCIAL"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RACE"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="nav-shop" class="nav-item nav-item-active">
+                <ui:Label text="SHOP"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RANK"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

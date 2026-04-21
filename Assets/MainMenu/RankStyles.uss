@@ -1,0 +1,128 @@
+/* =========================================
+   RANK / LEADERBOARD DESIGN SYSTEM
+   ========================================= */
+:root {
+    --bg-surface: #111318;
+    --surface-container-low: #1a1c20;
+    --surface-container-high: #282a2e;
+    --surface-container-highest: #333539;
+    
+    --primary-container: #00e5ff; /* Neon Cyan */
+    --secondary-container: #ff5713; /* Neon Orange / Bronze */
+    --tertiary: #cdff13; /* Neon Lime */
+    --silver: #849396; /* Silver / Outline */
+    
+    --outline-variant: #3b494c;
+    --text-muted: #bac9cc;
+}
+
+* { border-radius: 0; }
+.root-container { flex-grow: 1; background-color: var(--bg-surface); color: white; width: 100%; height: 100%; flex-direction: column; }
+
+/* Typography */
+.font-black { -unity-font-style: bold-and-italic; text-transform: uppercase; }
+.text-cyan { color: var(--primary-container); }
+.text-orange { color: var(--secondary-container); }
+.text-lime { color: var(--tertiary); }
+.text-muted { color: var(--text-muted); }
+
+/* TOP BAR */
+.top-bar { flex-shrink: 0; flex-direction: row; justify-content: space-between; align-items: center; padding: 16px 24px; background-color: rgba(17, 19, 24, 0.9); border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.3); }
+.top-bar-left { flex-direction: row; align-items: center; }
+.icon-box-cyan { width: 32px; height: 32px; background-color: var(--surface-container-high); border-left-width: 3px; border-left-color: var(--primary-container); align-items: center; justify-content: center; margin-right: 12px; }
+.top-bar-right { flex-direction: row; align-items: center; }
+.nav-links { flex-direction: row; margin-right: 24px; }
+.nav-link { color: rgba(195, 245, 255, 0.6); margin-left: 24px; font-size: 12px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+.nav-link-active { color: var(--primary-container); -unity-font-style: bold-and-italic; }
+.currency-badge { background-color: var(--surface-container-high); padding: 6px 16px; border-right-width: 2px; border-right-color: var(--primary-container); margin-right: 16px; }
+
+/* MAIN CONTENT */
+.main-content { padding: 32px 48px; padding-bottom: 40px; flex-direction: column; }
+
+/* HERO HEADER */
+.hero-header { margin-bottom: 32px; }
+
+/* PODIUM SECTION */
+.podium-container { flex-direction: row; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; }
+.podium-card { background-color: var(--surface-container-low); padding: 24px; flex-direction: column; align-items: center; position: relative; border-bottom-width: 2px; border-bottom-color: rgba(0,0,0,0.5); }
+.podium-2nd { width: 31%; border-left-width: 4px; border-left-color: var(--silver); }
+.podium-3rd { width: 31%; border-left-width: 4px; border-left-color: var(--secondary-container); }
+.podium-1st { width: 34%; background-color: var(--surface-container-high); border-width: 2px; border-color: var(--primary-container); margin-bottom: 24px; padding: 32px 24px; }
+
+.podium-rank-bg { position: absolute; top: 8px; right: 16px; font-size: 48px; color: rgba(255,255,255,0.05); -unity-font-style: bold-and-italic; }
+.podium-avatar { width: 64px; height: 64px; background-color: var(--surface-container-highest); border-width: 2px; border-color: var(--outline-variant); margin-bottom: 12px; }
+.podium-1st-avatar { width: 80px; height: 80px; border-color: var(--primary-container); border-width: 3px; }
+.podium-name { font-size: 20px; color: #fff; -unity-font-style: bold-and-italic; margin-bottom: 4px; }
+.podium-1st-name { font-size: 28px; }
+.podium-wins { font-size: 12px; -unity-font-style: bold-and-italic; color: var(--tertiary); letter-spacing: 2px; margin-bottom: 16px; }
+
+.podium-stats-row { flex-direction: row; justify-content: space-between; width: 100%; border-top-width: 1px; border-top-color: var(--outline-variant); padding-top: 12px; }
+.podium-1st-stats { flex-direction: row; justify-content: space-between; width: 100%; }
+.podium-stat-box { background-color: var(--surface-container-low); padding: 8px 12px; flex-grow: 1; margin: 0 4px; border-bottom-width: 2px; align-items: center; }
+.stat-box-cyan { border-bottom-color: var(--primary-container); }
+.stat-box-lime { border-bottom-color: var(--tertiary); }
+
+/* SEARCH & FILTER */
+.search-row { flex-direction: row; margin-bottom: 24px; height: 48px; }
+.search-input-container { flex-grow: 1; background-color: var(--surface-container-high); flex-direction: row; align-items: center; padding-left: 16px; border-bottom-width: 2px; border-bottom-color: var(--outline-variant); margin-right: 16px; }
+.search-input { flex-grow: 1; background-color: transparent; border-width: 0; color: #fff; -unity-font-style: bold-and-italic; font-size: 14px; }
+.filter-btn-dark { background-color: var(--surface-container-low); color: #fff; border-width: 0; padding: 0 24px; -unity-font-style: bold-and-italic; font-size: 12px; transition: background-color 0.1s; }
+.filter-btn-cyan { background-color: var(--primary-container); color: var(--bg-surface); border-width: 0; padding: 0 32px; -unity-font-style: bold-and-italic; font-size: 12px; margin-left: 8px; }
+
+/* LEADERBOARD LIST */
+.list-header-row { flex-direction: row; padding: 8px 24px; margin-bottom: 8px; }
+.list-header-text { font-size: 10px; -unity-font-style: bold; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; }
+
+.list-row { flex-direction: row; background-color: var(--surface-container-low); margin-bottom: 4px; padding: 12px 24px; align-items: center; border-left-width: 4px; border-left-color: transparent; transition: background-color 0.1s; }
+.list-row:hover { background-color: var(--surface-container-high); }
+.list-row-active { background-color: rgba(0, 229, 255, 0.05); border-left-color: var(--primary-container); }
+
+/* Exact Percentage Widths to lock columns */
+.col-rank { width: 10%; justify-content: center; }
+.col-pilot { width: 40%; flex-direction: row; align-items: center; }
+.col-wins { width: 15%; align-items: center; justify-content: center; }
+.col-time { width: 20%; align-items: center; justify-content: center; }
+.col-status { width: 15%; align-items: flex-end; justify-content: center; }
+
+.pilot-avatar { width: 40px; height: 40px; background-color: var(--surface-container-highest); margin-right: 16px; border-width: 1px; border-color: var(--outline-variant); }
+.status-badge { padding: 4px 8px; font-size: 8px; -unity-font-style: bold-and-italic; text-transform: uppercase; }
+
+
+
+/* =========================================
+   SCROLLBAR STYLING (Cyberpunk Theme)
+   ========================================= */
+
+/* 1. Hide the chunky Up/Down arrow buttons */
+.unity-scroll-view .unity-scroller--vertical #unity-low-button,
+.unity-scroll-view .unity-scroller--vertical #unity-high-button {
+    display: none;
+}
+
+/* 2. The Tracker (The background track) */
+.unity-scroll-view .unity-scroller--vertical #unity-tracker {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: rgba(17, 19, 24, 0.8); 
+    border-width: 0; 
+    width: 4px; 
+    margin-left: 6px; 
+}
+
+/* 3. The Dragger (The part you actually grab/scroll) */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: #00E5FF; /* Hardcoded Neon Cyan */
+    border-radius: 4px; 
+    border-width: 0;
+    width: 8px; 
+    left: 4px; 
+}
+
+/* 4. The Dragger Touch Effect */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:hover {
+    background-color: #c3f5ff; /* Slightly brighter when mouse hovers */
+}
+
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:active {
+    background-color: #ffffff; /* Flashes white when touched */
+}

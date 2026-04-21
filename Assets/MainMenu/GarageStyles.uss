@@ -1,0 +1,132 @@
+:root {
+    --bg-surface: #111318;
+    --surface-container-low: #1a1c20;
+    --surface-container-high: #282a2e;
+    --surface-container-highest: #333539;
+    --primary-color: #00E5FF; 
+    --lime-color: #cdff13;    
+    --orange-color: #ff5713;  
+    --outline-variant: #3b494c;
+    --text-muted: #bac9cc;
+    --glass-panel: rgba(26, 28, 32, 0.6);
+}
+
+* { border-radius: 0; }
+.root-container { flex-grow: 1; background-color: var(--bg-surface); color: white; }
+.background-image-container { position: absolute; width: 100%; height: 100%; -unity-background-scale-mode: scale-and-crop; opacity: 0.5; }
+.background-gradient { position: absolute; width: 100%; height: 100%; background-color: rgba(17, 19, 24, 0.85); }
+
+/* Typography */
+.text-cyan { color: var(--primary-color); }
+.text-lime { color: var(--lime-color); }
+.text-orange { color: var(--orange-color); }
+.text-muted { color: var(--text-muted); }
+.font-headline { -unity-font-style: bold-and-italic; font-size: 20px; text-transform: uppercase; }
+.font-title { -unity-font-style: bold-and-italic; font-size: 56px; text-transform: uppercase; letter-spacing: -2px; }
+.font-label { font-size: 10px; text-transform: uppercase; -unity-font-style: bold; color: var(--text-muted); }
+
+/* Top Header */
+.top-bar { flex-direction: row; justify-content: space-between; align-items: center; padding: 16px 24px; background-color: rgba(17, 19, 24, 0.8); border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.3); }
+.currency-badge { flex-direction: row; align-items: center; background-color: var(--surface-container-low); padding: 4px 16px; border-left-width: 2px; border-left-color: var(--primary-color); rotate: -5deg; }
+
+/* MAIN LAYOUT: ROWS */
+.main-content { flex-direction: column; padding: 24px; padding-bottom: 100px; flex-grow: 1; }
+.top-row { flex-direction: row; margin-bottom: 32px; justify-content: space-between; }
+.bottom-row { flex-direction: row; flex-grow: 1; justify-content: space-between; }
+
+/* TOP ROW: Hero & Stats */
+.hero-container { flex-basis: 65%; padding-right: 24px; justify-content: flex-end; }
+.hero-car-image { width: 100%; height: 280px; background-color: var(--surface-container-low); border-left-width: 4px; border-left-color: var(--primary-color); -unity-background-scale-mode: scale-to-fit; }
+.stats-container { flex-basis: 35%; flex-direction: column; justify-content: flex-end; }
+.metrics-panel { background-color: var(--glass-panel); padding: 24px; border-right-width: 2px; border-right-color: rgba(0, 229, 255, 0.2); margin-bottom: 16px; }
+
+/* Performance Gauges */
+.gauge-row { margin-bottom: 16px; }
+.gauge-labels { flex-direction: row; justify-content: space-between; align-items: flex-end; margin-bottom: 4px; }
+.gauge-track { height: 4px; background-color: var(--surface-container-highest); width: 100%; }
+.gauge-fill-cyan { height: 100%; background-color: var(--primary-color); }
+.gauge-fill-lime { height: 100%; background-color: var(--lime-color); }
+
+/* SELECT MACHINE BUTTON (Styled for Parallelogram Sprite) */
+.btn-select-machine { 
+    background-color: var(--primary-color); /* Fallback color */
+    -unity-background-image-tint-color: var(--primary-color); /* Tints your sprite */
+    color: #00363d; 
+    font-size: 20px; 
+    -unity-font-style: bold-and-italic; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    padding: 16px; 
+    border-width: 0; 
+    transition: scale 0.1s; 
+}
+.btn-select-machine:active { background-color: #ffffff; -unity-background-image-tint-color: #ffffff; scale: 0.98 0.98; }
+
+/* BOTTOM ROW: Upgrades & Fleet */
+.upgrades-container { flex-basis: 35%; padding-right: 24px; }
+.fleet-container { flex-basis: 65%; }
+
+.section-header { font-size: 16px; -unity-font-style: bold-and-italic; text-transform: uppercase; border-left-width: 2px; padding-left: 8px; margin-bottom: 16px; margin-top: 8px; }
+
+/* Upgrade Cards */
+.upgrade-card { flex-direction: row; justify-content: space-between; align-items: center; background-color: var(--surface-container-low); border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.2); padding: 12px 16px; margin-bottom: 8px; transition: background-color 0.1s; }
+.upgrade-card:hover { background-color: var(--surface-container-high); }
+.upgrade-icon-box { width: 40px; height: 40px; background-color: var(--surface-container-highest); margin-right: 16px; align-items: center; justify-content: center; }
+
+/* Fleet Arrow Buttons */
+.fleet-header-row { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.arrow-btn-group { flex-direction: row; }
+.arrow-btn { background-color: transparent; border-width: 1px; border-color: var(--outline-variant); color: white; font-size: 18px; width: 40px; height: 40px; margin-left: 8px; transition: background-color 0.1s; }
+.arrow-btn:hover { background-color: var(--surface-container-high); }
+.arrow-btn-active { border-color: var(--primary-color); color: var(--primary-color); }
+.arrow-btn-active:hover { background-color: var(--primary-color); color: #111318; }
+
+/* Fleet Grid */
+.fleet-grid { flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
+.fleet-card { width: 48%; background-color: var(--surface-container-low); border-width: 1px; border-color: rgba(59, 73, 76, 0.3); margin-bottom: 16px; }
+.fleet-card-active { border-width: 2px; border-color: var(--primary-color); background-color: var(--surface-container-high); }
+.fleet-image { width: 100%; height: 120px; background-color: var(--surface-container-highest); -unity-background-scale-mode: scale-and-crop; }
+
+/* Bottom Nav Bar */
+.bottom-nav { position: absolute; bottom: 0; width: 100%; flex-direction: row; justify-content: space-around; background-color: rgba(17, 19, 24, 0.95); padding: 12px 0; border-top-width: 1px; border-top-color: rgba(59, 73, 76, 0.3); }
+.nav-item { align-items: center; color: rgba(195, 245, 255, 0.5); }
+.nav-item-active { background-color: var(--primary-color); color: #111318; padding: 8px 32px; rotate: -5deg; }
+
+
+/* =========================================
+   SCROLLBAR STYLING (Cyberpunk Theme)
+   ========================================= */
+
+/* 1. Hide the chunky Up/Down arrow buttons */
+.unity-scroll-view .unity-scroller--vertical #unity-low-button,
+.unity-scroll-view .unity-scroller--vertical #unity-high-button {
+    display: none;
+}
+
+/* 2. The Tracker (The background track) */
+.unity-scroll-view .unity-scroller--vertical #unity-tracker {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: rgba(17, 19, 24, 0.8); 
+    border-width: 0; 
+    width: 4px; 
+    margin-left: 6px; 
+}
+
+/* 3. The Dragger (The part you actually grab/scroll) */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: #00E5FF; /* Hardcoded Neon Cyan */
+    border-radius: 4px; 
+    border-width: 0;
+    width: 8px; 
+    left: 4px; 
+}
+
+/* 4. The Dragger Touch Effect */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:hover {
+    background-color: #c3f5ff; /* Slightly brighter when mouse hovers */
+}
+
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:active {
+    background-color: #ffffff; /* Flashes white when touched */
+}

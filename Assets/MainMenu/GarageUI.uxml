@@ -1,0 +1,154 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/GarageStyles.uss?fileID=7433441132597879392&amp;guid=caed80ddafd45d040b9b60efc277dcf4&amp;type=3#GarageStyles"/>
+    <ui:VisualElement class="root-container" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="bg-image" class="background-image-container"/>
+        <ui:VisualElement class="background-gradient"/>
+        <ui:VisualElement class="top-bar">
+            <ui:Label text="NEON_DRIVE" class="font-headline text-cyan" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+            <ui:VisualElement class="currency-badge">
+                <ui:Label name="txt-money" text="15,400 CR" class="font-headline text-cyan" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView mode="Vertical" class="main-content">
+            <ui:VisualElement class="top-row">
+                <ui:VisualElement class="hero-container">
+                    <ui:VisualElement name="hero-car-img" class="hero-car-image" style="justify-content: flex-end; padding: 24px; background-image: url(&quot;project://database/Assets/ChatGPT%20Image%20Mar%2031,%202026,%2001_47_24%20PM.png?fileID=2800000&amp;guid=c0fb20d12fd47c14891b9eb20a8665e3&amp;type=3#ChatGPT Image Mar 31, 2026, 01_47_24 PM&quot;); height: 418px; width: 960px; -unity-background-scale-mode: scale-and-crop;">
+                        <ui:Label text="VORTEX X-9" data-source="" class="font-title" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:Label text="PROTOTYPE / CLASS S" class="font-headline text-lime" style="font-size: 14px; margin-top: -8px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="stats-container">
+                    <ui:VisualElement class="metrics-panel" style="translate: -60px 0; height: 328px; width: 628px;">
+                        <ui:Label text="PERFORMANCE METRICS" class="font-label" style="margin-bottom: 16px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:VisualElement class="gauge-row">
+                            <ui:VisualElement class="gauge-labels">
+                                <ui:Label text="SPEED" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="98" class="font-headline text-cyan"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="gauge-track">
+                                <ui:VisualElement class="gauge-fill-cyan" style="width: 98%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="gauge-row">
+                            <ui:VisualElement class="gauge-labels">
+                                <ui:Label text="ACCELERATION" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="92" class="font-headline text-cyan"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="gauge-track">
+                                <ui:VisualElement class="gauge-fill-cyan" style="width: 92%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="gauge-row">
+                            <ui:VisualElement class="gauge-labels">
+                                <ui:Label text="HANDLING" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="85" class="font-headline text-cyan"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="gauge-track">
+                                <ui:VisualElement class="gauge-fill-cyan" style="width: 85%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="gauge-row">
+                            <ui:VisualElement class="gauge-labels">
+                                <ui:Label text="NOS OUTPUT" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="MAX" class="font-headline text-lime"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="gauge-track">
+                                <ui:VisualElement class="gauge-fill-lime" style="width: 100%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Button name="btn-select-machine" text="SELECT MACHINE" class="btn-select-machine" style="translate: -65px 0; width: 625px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="bottom-row">
+                <ui:VisualElement class="upgrades-container">
+                    <ui:Label text="COMPONENT UPGRADES" class="section-header" style="border-left-color: rgb(205, 255, 19); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement class="upgrade-card">
+                        <ui:VisualElement style="flex-direction: row; align-items: center;">
+                            <ui:VisualElement class="upgrade-icon-box">
+                                <ui:Label text="E" class="font-headline text-muted"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement>
+                                <ui:Label text="ENGINE" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="V12 QUAD-TURBO" class="font-headline" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Label text="LVL 4" class="font-label text-lime"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="upgrade-card">
+                        <ui:VisualElement style="flex-direction: row; align-items: center;">
+                            <ui:VisualElement class="upgrade-icon-box">
+                                <ui:Label text="T" class="font-headline text-muted"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement>
+                                <ui:Label text="TRACTION" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="GRIP-MASTER Z" class="font-headline" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Label text="LVL 2" class="font-label text-cyan"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="upgrade-card">
+                        <ui:VisualElement style="flex-direction: row; align-items: center;">
+                            <ui:VisualElement class="upgrade-icon-box">
+                                <ui:Label text="N" class="font-headline text-muted"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement>
+                                <ui:Label text="NITROUS" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="PLASMA BURNER" class="font-headline" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Label text="UPGRADE +" class="font-label text-orange"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="fleet-container">
+                    <ui:VisualElement class="fleet-header-row">
+                        <ui:Label text="AVAILABLE FLEET" class="section-header" style="border-left-color: rgb(0, 229, 255); margin-bottom: 0; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:VisualElement class="arrow-btn-group">
+                            <ui:Button text="&lt;" class="arrow-btn"/>
+                            <ui:Button text="&gt;" class="arrow-btn arrow-btn-active"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="fleet-grid" style="height: 280px;">
+                        <ui:VisualElement class="fleet-card fleet-card-active">
+                            <ui:VisualElement style="position: absolute; top: 0; right: 0; background-color: rgb(0, 229, 255); padding: 2px 6px; z-index: 10;">
+                                <ui:Label text="ACTIVE" style="font-size: 8px; color: rgb(17, 19, 24); -unity-font-style: bold-and-italic;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="img-fleet-1" class="fleet-image" style="height: 178px; background-image: url(&quot;project://database/Assets/ChatGPT%20Image%20Mar%2031,%202026,%2002_52_23%20PM.png?fileID=2800000&amp;guid=246acec1f0de8254cb3e95fccd97ae7e&amp;type=3#ChatGPT Image Mar 31, 2026, 02_52_23 PM&quot;);"/>
+                            <ui:VisualElement style="padding: 12px;">
+                                <ui:Label text="VORTEX X-9" class="font-headline" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="TIER 3 LEGEND" class="font-label text-cyan" style="font-size: 8px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="fleet-card">
+                            <ui:VisualElement name="img-fleet-2" class="fleet-image" style="opacity: 0.3; height: 180px; background-image: url(&quot;project://database/Assets/ChatGPT%20Image%20Mar%2031,%202026,%2002_56_29%20PM.png?fileID=2800000&amp;guid=44205e96e197f8d4bb7b2e4a7b12d6b2&amp;type=3#ChatGPT Image Mar 31, 2026, 02_56_29 PM&quot;); color: rgb(255, 255, 255);"/>
+                            <ui:VisualElement style="padding: 12px;">
+                                <ui:Label text="RAZOR 7" class="font-headline text-muted" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: center; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                                    <ui:Label text="TIER 2 MUSCLE" class="font-label text-orange" style="font-size: 8px;"/>
+                                    <ui:Label text="80,000 CR" class="font-label text-orange"/>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:VisualElement class="bottom-nav">
+            <ui:VisualElement name="nav-garage" class="nav-item nav-item-active">
+                <ui:Label text="GARAGE" style="font-size: 14px; -unity-font-style: bold-and-italic; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                <ui:Label text="SOCIAL" class="font-label"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                <ui:Label text="RACE" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                <ui:Label text="SHOP" class="font-label"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RANK" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

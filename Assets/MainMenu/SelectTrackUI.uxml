@@ -1,0 +1,147 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/SelectTrackStyles.uss?fileID=7433441132597879392&amp;guid=8a469383126b41f4f9a93d39de12fd27&amp;type=3#SelectTrackStyles"/>
+    <ui:VisualElement class="root-container">
+        <ui:VisualElement class="top-bar" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+            <ui:VisualElement class="top-bar-left">
+                <ui:Button text="&lt;" class="btn-back"/>
+                <ui:Label text="SELECT TRACK" class="font-black text-cyan" style="font-size: 20px; letter-spacing: 2px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="top-bar-right">
+                <ui:VisualElement class="nav-links">
+                    <ui:Label text="GARAGE" class="nav-link"/>
+                    <ui:Label text="RACE" class="nav-link nav-link-active"/>
+                    <ui:Label text="LEADERBOARD" class="nav-link"/>
+                    <ui:Label text="SETTINGS" class="nav-link"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView mode="Vertical" style="flex-grow: 1; flex-shrink: 1; width: 100%;">
+            <ui:VisualElement class="main-content">
+                <ui:VisualElement name="hero-bg" class="hero-section" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;); background-image: url(&quot;project://database/Assets/unnamed%20(14).png?fileID=2800000&amp;guid=405eca69dab8bc0489ac17ac967b5fbf&amp;type=3#unnamed (14)&quot;); -unity-slice-type: sliced; -unity-background-scale-mode: scale-and-crop;">
+                    <ui:Label text="FEATURED EVENT" class="hero-badge"/>
+                    <ui:Label text="NEO-TOKYO" class="hero-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="UNDERGROUND" class="hero-subtitle" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement class="hero-stats-row">
+                        <ui:VisualElement class="hero-stat-block" style="border-left-width: 0; padding-left: 0;">
+                            <ui:Label text="DIFFICULTY" class="hero-stat-label"/>
+                            <ui:Label text="HARD" class="hero-stat-value text-red"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="hero-stat-block">
+                            <ui:Label text="DISTANCE" class="hero-stat-label"/>
+                            <ui:Label text="6.8 KM" class="hero-stat-value text-muted" style="color: rgb(255, 255, 255);"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="hero-stat-block">
+                            <ui:Label text="REWARDS" class="hero-stat-label"/>
+                            <ui:Label text="2,500 CR" class="hero-stat-value text-lime"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="track-grid">
+                    <ui:VisualElement class="track-card">
+                        <ui:VisualElement name="img-track-1" class="track-image-box" style="background-image: url(&quot;project://database/Assets/unnamed%20(10).png?fileID=2800000&amp;guid=03e348d42b79b38469c65dd0a6a5753d&amp;type=3#unnamed (10)&quot;);">
+                            <ui:VisualElement class="track-badge-tr" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                                <ui:Label text="T" style="color: rgb(205, 255, 19); font-size: 10px; margin-right: 4px;"/>
+                                <ui:Label text="01:42.5" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: bold;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="track-content" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                            <ui:Label text="ELECTRIC DESERT" class="track-title"/>
+                            <ui:Label text="MOJAVE SECTOR 7" class="track-subtitle"/>
+                            <ui:VisualElement class="track-footer-row">
+                                <ui:VisualElement class="diff-container">
+                                    <ui:VisualElement class="diff-bars">
+                                        <ui:VisualElement class="diff-bar diff-bar-lime"/>
+                                        <ui:VisualElement class="diff-bar"/>
+                                        <ui:VisualElement class="diff-bar"/>
+                                    </ui:VisualElement>
+                                    <ui:Label text="EASY" class="diff-label text-lime"/>
+                                </ui:VisualElement>
+                                <ui:Label text="4.2 KM" class="track-distance"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button text="DRIVE" class="btn-drive" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="track-card">
+                        <ui:VisualElement name="img-track-2" class="track-image-box" style="background-image: url(&quot;project://database/Assets/unnamed%20(11).png?fileID=2800000&amp;guid=2c7131bb43f7842438a64b4675609bbd&amp;type=3#unnamed (11)&quot;);">
+                            <ui:VisualElement class="track-badge-tr">
+                                <ui:Label text="*" style="color: rgb(255, 87, 19); font-size: 10px; margin-right: 4px;"/>
+                                <ui:Label text="NEW RECORD" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="track-content" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                            <ui:Label text="SKYLINE OVERDRIVE" class="track-title"/>
+                            <ui:Label text="METROPOLIS UPPER DECK" class="track-subtitle"/>
+                            <ui:VisualElement class="track-footer-row">
+                                <ui:VisualElement class="diff-container">
+                                    <ui:VisualElement class="diff-bars">
+                                        <ui:VisualElement class="diff-bar diff-bar-orange"/>
+                                        <ui:VisualElement class="diff-bar diff-bar-orange"/>
+                                        <ui:VisualElement class="diff-bar"/>
+                                    </ui:VisualElement>
+                                    <ui:Label text="MEDIUM" class="diff-label text-orange"/>
+                                </ui:VisualElement>
+                                <ui:Label text="5.5 KM" class="track-distance"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button text="DRIVE" class="btn-drive" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="track-card">
+                        <ui:VisualElement name="img-track-3" class="track-image-box" style="background-image: url(&quot;project://database/Assets/unnamed%20(12).png?fileID=2800000&amp;guid=7287e4197a0b93843b28675aaa34dcd0&amp;type=3#unnamed (12)&quot;);"/>
+                        <ui:VisualElement class="track-content" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                            <ui:Label text="FROZEN VELOCITY" class="track-title"/>
+                            <ui:Label text="NORDIC SUMMIT" class="track-subtitle"/>
+                            <ui:VisualElement class="track-footer-row">
+                                <ui:VisualElement class="diff-container">
+                                    <ui:VisualElement class="diff-bars">
+                                        <ui:VisualElement class="diff-bar diff-bar-red"/>
+                                        <ui:VisualElement class="diff-bar diff-bar-red"/>
+                                        <ui:VisualElement class="diff-bar diff-bar-red"/>
+                                    </ui:VisualElement>
+                                    <ui:Label text="HARD" class="diff-label text-red"/>
+                                </ui:VisualElement>
+                                <ui:Label text="8.1 KM" class="track-distance"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button text="DRIVE" class="btn-drive" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="track-card">
+                        <ui:VisualElement name="img-track-4" class="track-image-box" style="background-image: url(&quot;project://database/Assets/unnamed%20(13).png?fileID=2800000&amp;guid=b7ccb0699f0ac854c8e55fd45825e25b&amp;type=3#unnamed (13)&quot;);"/>
+                        <ui:VisualElement class="track-content" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                            <ui:Label text="CARGO DRIFT" class="track-title"/>
+                            <ui:Label text="PORT OF NEON" class="track-subtitle"/>
+                            <ui:VisualElement class="track-footer-row">
+                                <ui:VisualElement class="diff-container">
+                                    <ui:VisualElement class="diff-bars">
+                                        <ui:VisualElement class="diff-bar diff-bar-orange"/>
+                                        <ui:VisualElement class="diff-bar diff-bar-orange"/>
+                                        <ui:VisualElement class="diff-bar"/>
+                                    </ui:VisualElement>
+                                    <ui:Label text="MEDIUM" class="diff-label text-orange"/>
+                                </ui:VisualElement>
+                                <ui:Label text="3.9 KM" class="track-distance"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Button text="DRIVE" class="btn-drive"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:VisualElement class="bottom-nav" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="GARAGE"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="SOCIAL"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="nav-race" class="nav-item nav-item-active">
+                <ui:Label text="RACE"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="SHOP"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RANK"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,175 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/RankStyles.uss?fileID=7433441132597879392&amp;guid=3a309426e2f99fa40b1c1e6af8cad961&amp;type=3#RankStyles"/>
+    <ui:VisualElement class="root-container">
+        <ui:VisualElement class="top-bar" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+            <ui:VisualElement class="top-bar-left">
+                <ui:VisualElement class="icon-box-cyan">
+                    <ui:Label text="U" style="color: rgb(0, 229, 255); -unity-font-style: bold;"/>
+                </ui:VisualElement>
+                <ui:Label text="NEON_DRIVE" class="font-black text-cyan" style="font-size: 20px; letter-spacing: 2px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="top-bar-right">
+                <ui:VisualElement class="nav-links">
+                    <ui:Label text="GARAGE" class="nav-link"/>
+                    <ui:Label text="SOCIAL" class="nav-link"/>
+                    <ui:Label text="RACE" class="nav-link"/>
+                    <ui:Label text="SHOP" class="nav-link"/>
+                    <ui:Label text="RANK" class="nav-link nav-link-active"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="currency-badge">
+                    <ui:Label text="15,400 CR" class="font-black text-cyan" style="font-size: 14px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView mode="Vertical" style="flex-grow: 1; flex-shrink: 1; width: 100%;">
+            <ui:VisualElement class="main-content">
+                <ui:VisualElement class="hero-header">
+                    <ui:Label text="GLOBAL" class="font-black" style="font-size: 64px; margin-bottom: -20px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="RANKING" class="font-black text-cyan" style="font-size: 64px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="SEASON 04: KINETIC MONOLITH" class="text-muted" style="font-size: 12px; -unity-font-style: bold-and-italic; text-transform: uppercase; letter-spacing: 2px; margin-top: 8px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="podium-container">
+                    <ui:VisualElement class="podium-card podium-2nd">
+                        <ui:Label text="02" class="podium-rank-bg"/>
+                        <ui:VisualElement class="podium-avatar" style="background-image: url(&quot;project://database/Assets/unnamed%20(3).png?fileID=2800000&amp;guid=99914bf32e19b254f92c52262e023005&amp;type=3#unnamed (3)&quot;);"/>
+                        <ui:Label text="CYBER_PUNK_88" class="podium-name" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="482 WINS" class="podium-wins" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:VisualElement class="podium-stats-row" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                            <ui:Label text="BEST LAP" style="font-size: 10px; color: rgb(186, 201, 204); -unity-font-style: bold;"/>
+                            <ui:Label text="01:42.332" style="font-size: 12px; color: rgb(255, 255, 255); -unity-font-style: bold;"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="podium-card podium-1st">
+                        <ui:VisualElement style="position: absolute; top: -16px; right: -16px; background-color: rgb(0, 229, 255); padding: 8px 16px;">
+                            <ui:Label text="01" style="font-size: 24px; -unity-font-style: bold-and-italic; color: rgb(17, 19, 24);"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="podium-avatar podium-1st-avatar" style="background-image: url(&quot;project://database/Assets/unnamed%20(4).png?fileID=2800000&amp;guid=247573cb2a99b3247a562fd53bef4866&amp;type=3#unnamed (4)&quot;);"/>
+                        <ui:Label text="KINETIC_KING" class="podium-name podium-1st-name" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="1,204 WINS" class="podium-wins" style="font-size: 14px; margin-bottom: 24px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                        <ui:VisualElement class="podium-1st-stats">
+                            <ui:VisualElement class="podium-stat-box stat-box-cyan">
+                                <ui:Label text="BEST LAP" style="font-size: 8px; color: rgb(186, 201, 204); margin-bottom: 4px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="01:38.001" style="font-size: 14px; color: rgb(0, 229, 255); -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="podium-stat-box stat-box-lime">
+                                <ui:Label text="XP LEVEL" style="font-size: 8px; color: rgb(186, 201, 204); margin-bottom: 4px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                <ui:Label text="LVL 99" style="font-size: 14px; color: rgb(205, 255, 19); -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="podium-card podium-3rd" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                        <ui:Label text="03" class="podium-rank-bg"/>
+                        <ui:VisualElement class="podium-avatar" style="border-color: rgb(255, 87, 19); background-image: url(&quot;project://database/Assets/unnamed%20(5).png?fileID=2800000&amp;guid=dc220306d7168dd4b8e8a9bf8cb3acec&amp;type=3#unnamed (5)&quot;);"/>
+                        <ui:Label text="VOID_RUNNER" class="podium-name" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="395 WINS" class="podium-wins"/>
+                        <ui:VisualElement class="podium-stats-row">
+                            <ui:Label text="BEST LAP" style="font-size: 10px; color: rgb(186, 201, 204); -unity-font-style: bold;"/>
+                            <ui:Label text="01:44.910" style="font-size: 12px; color: rgb(255, 255, 255); -unity-font-style: bold;"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="search-row">
+                    <ui:VisualElement class="search-input-container">
+                        <ui:Label text="S" style="color: rgb(0, 229, 255); margin-right: 12px;"/>
+                        <ui:TextField value="SEARCH PILOTS..." class="search-input"/>
+                    </ui:VisualElement>
+                    <ui:Button text="ALL TIME" class="filter-btn-dark"/>
+                    <ui:Button text="WEEKLY" class="filter-btn-cyan"/>
+                </ui:VisualElement>
+                <ui:VisualElement style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                    <ui:VisualElement class="list-header-row">
+                        <ui:Label text="RANK" class="list-header-text col-rank"/>
+                        <ui:Label text="PILOT" class="list-header-text col-pilot"/>
+                        <ui:Label text="WINS" class="list-header-text col-wins"/>
+                        <ui:Label text="BEST TIME" class="list-header-text col-time"/>
+                        <ui:Label text="STATUS" class="list-header-text col-status"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="list-row">
+                        <ui:VisualElement class="col-rank">
+                            <ui:Label text="04" class="font-black text-muted" style="font-size: 20px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-pilot">
+                            <ui:VisualElement class="pilot-avatar" style="background-image: url(&quot;project://database/Assets/unnamed%20(6).png?fileID=2800000&amp;guid=06216b4a3d65f244496193a6a61e6b8c&amp;type=3#unnamed (6)&quot;);"/>
+                            <ui:VisualElement>
+                                <ui:Label text="NEON_GHOST" class="font-black" style="color: rgb(255, 255, 255); font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                                <ui:Label text="PRO CIRCUIT" style="font-size: 10px; color: rgb(0, 229, 255); -unity-font-style: bold;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-wins">
+                            <ui:Label text="288" class="font-black" style="color: rgb(255, 255, 255); font-size: 16px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-time">
+                            <ui:Label text="01:45.002" style="font-size: 14px; color: rgb(186, 201, 204); -unity-font-style: bold;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-status">
+                            <ui:Label text="ONLINE" class="status-badge" style="color: rgb(205, 255, 19); border-width: 1px; border-color: rgba(205, 255, 19, 0.3);"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="list-row">
+                        <ui:VisualElement class="col-rank">
+                            <ui:Label text="05" class="font-black text-muted" style="font-size: 20px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-pilot">
+                            <ui:VisualElement class="pilot-avatar" style="background-image: url(&quot;project://database/Assets/unnamed%20(7).png?fileID=2800000&amp;guid=04be6e6dc7274d549aa5102a35f43657&amp;type=3#unnamed (7)&quot;);"/>
+                            <ui:VisualElement>
+                                <ui:Label text="VELOCITY_VIXEN" class="font-black" style="color: rgb(255, 255, 255); font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                                <ui:Label text="STREET OPS" style="font-size: 10px; color: rgb(0, 229, 255); -unity-font-style: bold;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-wins">
+                            <ui:Label text="274" class="font-black" style="color: rgb(255, 255, 255); font-size: 16px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-time">
+                            <ui:Label text="01:46.115" style="font-size: 14px; color: rgb(186, 201, 204); -unity-font-style: bold;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-status">
+                            <ui:Label text="OFFLINE" class="status-badge" style="color: rgb(186, 201, 204); background-color: rgb(51, 53, 57);"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="list-row list-row-active">
+                        <ui:VisualElement class="col-rank">
+                            <ui:Label text="12" class="font-black text-cyan" style="font-size: 20px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-pilot">
+                            <ui:VisualElement class="pilot-avatar" style="border-color: rgb(0, 229, 255); background-image: url(&quot;project://database/Assets/unnamed%20(8).png?fileID=2800000&amp;guid=98fd30bdf12d9d9439fed461d2ba4aae&amp;type=3#unnamed (8)&quot;);"/>
+                            <ui:VisualElement>
+                                <ui:Label text="PILOT_PROFILE (YOU)" class="font-black text-cyan" style="font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                                <ui:Label text="ROOKIE TIER" style="font-size: 10px; color: rgb(205, 255, 19); -unity-font-style: bold;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-wins">
+                            <ui:Label text="112" class="font-black" style="color: rgb(255, 255, 255); font-size: 16px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-time">
+                            <ui:Label text="01:58.490" style="font-size: 14px; color: rgb(255, 255, 255); -unity-font-style: bold;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-status">
+                            <ui:Label text="ACTIVE" class="status-badge" style="background-color: rgb(0, 229, 255); color: rgb(17, 19, 24);"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="list-row">
+                        <ui:VisualElement class="col-rank">
+                            <ui:Label text="13" class="font-black text-muted" style="font-size: 20px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-pilot">
+                            <ui:VisualElement class="pilot-avatar" style="background-image: url(&quot;project://database/Assets/unnamed%20(9).png?fileID=2800000&amp;guid=f625b798f38c05a4e924f5711c38347f&amp;type=3#unnamed (9)&quot;);"/>
+                            <ui:VisualElement>
+                                <ui:Label text="SHIFT_WIZARD" class="font-black" style="color: rgb(255, 255, 255); font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                                <ui:Label text="DRIFT SQUAD" style="font-size: 10px; color: rgb(0, 229, 255); -unity-font-style: bold;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-wins">
+                            <ui:Label text="98" class="font-black" style="color: rgb(255, 255, 255); font-size: 16px;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-time">
+                            <ui:Label text="02:01.330" style="font-size: 14px; color: rgb(186, 201, 204); -unity-font-style: bold;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="col-status">
+                            <ui:Label text="ONLINE" class="status-badge" style="color: rgb(205, 255, 19); border-width: 1px; border-color: rgba(205, 255, 19, 0.3);"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

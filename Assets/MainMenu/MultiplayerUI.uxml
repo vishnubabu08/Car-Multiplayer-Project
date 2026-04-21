@@ -1,0 +1,171 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/MultiplayerStyles.uss?fileID=7433441132597879392&amp;guid=22332b4fdfe590144a7f3dabd2e6caae&amp;type=3#MultiplayerStyles"/>
+    <ui:VisualElement class="root-container">
+        <ui:VisualElement class="top-bar" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+            <ui:VisualElement class="top-bar-left">
+                <ui:VisualElement class="icon-box-cyan">
+                    <ui:Label text="U" style="color: rgb(0, 229, 255); -unity-font-style: bold;"/>
+                </ui:VisualElement>
+                <ui:Label text="NEON_DRIVE" class="font-black text-cyan" style="font-size: 20px; letter-spacing: 2px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="top-bar-right">
+                <ui:VisualElement class="nav-links">
+                    <ui:Label text="GARAGE" class="nav-link"/>
+                    <ui:Label text="SOCIAL" class="nav-link nav-link-active"/>
+                    <ui:Label text="RACE" class="nav-link"/>
+                    <ui:Label text="SHOP" class="nav-link"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="currency-badge">
+                    <ui:Label text="15,400 CR" class="font-black text-cyan" style="font-size: 14px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView mode="Vertical" style="flex-grow: 1; flex-shrink: 1; width: 100%;">
+            <ui:VisualElement class="main-content">
+                <ui:VisualElement class="hero-header">
+                    <ui:Label text="MULTIPLAYER" class="font-black" style="font-size: 48px; margin-bottom: -16px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:Label text="LOBBY" class="font-black text-cyan" style="font-size: 48px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                    <ui:VisualElement style="flex-direction: row; align-items: center; margin-top: 8px;">
+                        <ui:VisualElement style="width: 6px; height: 6px; background-color: rgb(205, 255, 19); margin-right: 8px;"/>
+                        <ui:Label text="SERVER: TOKYO_EDGE_01 / LATENCY: 24MS" class="text-muted" style="font-size: 10px; -unity-font-style: bold-and-italic; text-transform: uppercase; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="main-row">
+                    <ui:VisualElement class="left-col">
+                        <ui:Button text="QUICK JOIN" class="btn-quick-join" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Button text="CREATE PRIVATE ROOM" class="btn-outline" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:VisualElement class="input-row">
+                            <ui:TextField value="" class="room-input"/>
+                            <ui:Button text="&gt;" class="btn-enter"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="chat-panel" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                            <ui:VisualElement class="chat-header">
+                                <ui:Label text="TACTICAL COMMS" class="font-headline text-muted" style="color: rgb(255, 255, 255);"/>
+                                <ui:Label text="ACTIVE" class="text-lime" style="font-size: 10px; -unity-font-style: bold;"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="chat-message">
+                                <ui:Label text="SYSTEM:" class="chat-sender text-cyan"/>
+                                <ui:Label text="Lobby encryption established." class="chat-text" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="chat-message">
+                                <ui:Label text="X_GHOST:" class="chat-sender text-orange"/>
+                                <ui:Label text="Ready to burn some rubber. Which track?" class="chat-text" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="chat-message">
+                                <ui:Label text="CYBER_PUNK:" class="chat-sender text-cyan"/>
+                                <ui:Label text="Shinjuku Night Run. Best for drifts." class="chat-text" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                            </ui:VisualElement>
+                            <ui:TextField value="TYPE MESSAGE..." class="chat-input"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="right-col" style="height: 586px; width: 1043px;">
+                        <ui:VisualElement class="grid-header-row">
+                            <ui:Label text="CURRENT GRID" class="font-black" style="font-size: 20px;">
+                                <ui:Label text="4/8 PLAYERS" class="text-cyan" style="font-size: 10px; margin-left: 12px;"/>
+                            </ui:Label>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="player-grid" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+                            <ui:VisualElement class="player-card">
+                                <ui:VisualElement class="player-card-inner">
+                                    <ui:VisualElement class="player-top-row">
+                                        <ui:VisualElement style="flex-direction: row;">
+                                            <ui:VisualElement class="avatar-box" style="border-color: rgb(0, 229, 255); background-color: rgba(0, 229, 255, 0.1);"/>
+                                            <ui:VisualElement>
+                                                <ui:Label text="V_PILOT_01" class="font-headline" style="font-size: 16px;"/>
+                                                <ui:Label text="HOST / RANK 42" class="text-muted" style="font-size: 8px; -unity-font-style: bold; margin-top: -2px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="car-1" class="player-car-img" style="background-image: url(&quot;project://database/Assets/ChatGPT%20Image%20Mar%2031,%202026,%2001_47_24%20PM.png?fileID=2800000&amp;guid=c0fb20d12fd47c14891b9eb20a8665e3&amp;type=3#ChatGPT Image Mar 31, 2026, 01_47_24 PM&quot;);">
+                                        <ui:Label text="NEON SPECTER GT" class="car-name-badge text-cyan"/>
+                                    </ui:VisualElement>
+                                    <ui:VisualElement class="card-bottom-row">
+                                        <ui:VisualElement class="status-bars">
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(205, 255, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(205, 255, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(205, 255, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(59, 73, 76);"/>
+                                        </ui:VisualElement>
+                                        <ui:Label text="READY" class="status-badge" style="background-color: rgb(205, 255, 19); color: rgb(17, 19, 24);"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="player-card">
+                                <ui:VisualElement class="player-card-inner">
+                                    <ui:VisualElement class="player-top-row">
+                                        <ui:VisualElement style="flex-direction: row;">
+                                            <ui:VisualElement class="avatar-box" style="border-color: rgb(59, 73, 76);"/>
+                                            <ui:VisualElement>
+                                                <ui:Label text="X_GHOST" class="font-headline" style="font-size: 16px;"/>
+                                                <ui:Label text="PRO / RANK 88" class="text-muted" style="font-size: 8px; -unity-font-style: bold; margin-top: -2px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="car-2" class="player-car-img" style="background-image: url(&quot;project://database/Assets/ChatGPT%20Image%20Mar%2031,%202026,%2002_52_23%20PM.png?fileID=2800000&amp;guid=246acec1f0de8254cb3e95fccd97ae7e&amp;type=3#ChatGPT Image Mar 31, 2026, 02_52_23 PM&quot;);">
+                                        <ui:Label text="VOLT APEX R" class="car-name-badge text-orange"/>
+                                    </ui:VisualElement>
+                                    <ui:VisualElement class="card-bottom-row">
+                                        <ui:VisualElement class="status-bars">
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(255, 87, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(255, 87, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(59, 73, 76);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(59, 73, 76);"/>
+                                        </ui:VisualElement>
+                                        <ui:Label text="CHOOSING CAR" class="status-badge" style="background-color: rgb(40, 42, 46); color: rgb(186, 201, 204);"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="player-card">
+                                <ui:VisualElement class="player-card-inner">
+                                    <ui:VisualElement class="player-top-row">
+                                        <ui:VisualElement style="flex-direction: row;">
+                                            <ui:VisualElement class="avatar-box" style="border-color: rgb(59, 73, 76);"/>
+                                            <ui:VisualElement>
+                                                <ui:Label text="CYBER_PUNK" class="font-headline" style="font-size: 16px;"/>
+                                                <ui:Label text="ELITE / RANK 55" class="text-muted" style="font-size: 8px; -unity-font-style: bold; margin-top: -2px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="car-3" class="player-car-img" style="background-image: url(&quot;project://database/Assets/ChatGPT%20Image%20Mar%2031,%202026,%2002_56_29%20PM.png?fileID=2800000&amp;guid=44205e96e197f8d4bb7b2e4a7b12d6b2&amp;type=3#ChatGPT Image Mar 31, 2026, 02_56_29 PM&quot;);">
+                                        <ui:Label text="TOXIC DRIFTER" class="car-name-badge text-lime"/>
+                                    </ui:VisualElement>
+                                    <ui:VisualElement class="card-bottom-row">
+                                        <ui:VisualElement class="status-bars">
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(205, 255, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(205, 255, 19);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(59, 73, 76);"/>
+                                            <ui:VisualElement class="status-bar" style="background-color: rgb(59, 73, 76);"/>
+                                        </ui:VisualElement>
+                                        <ui:Label text="READY" class="status-badge" style="background-color: rgb(205, 255, 19); color: rgb(17, 19, 24);"/>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="invite-slot">
+                                <ui:Label text="+" style="font-size: 24px; color: rgb(186, 201, 204); margin-bottom: 4px;"/>
+                                <ui:Label text="INVITE FRIEND" class="text-muted" style="font-size: 10px; -unity-font-style: bold-and-italic; text-transform: uppercase;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:Button text="START RACE &gt;&gt;" class="fab-start-race" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+        <ui:VisualElement class="bottom-nav" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="GARAGE"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="nav-social" class="nav-item nav-item-active">
+                <ui:Label text="SOCIAL"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RACE"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="SHOP"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-item">
+                <ui:Label text="RANK"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

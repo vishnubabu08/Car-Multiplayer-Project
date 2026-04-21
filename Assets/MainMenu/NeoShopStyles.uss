@@ -1,0 +1,138 @@
+/* =========================================
+   NEO-SHOP DESIGN SYSTEM
+   ========================================= */
+:root {
+    --bg-surface: #111318;
+    --surface-container-low: #1a1c20;
+    --surface-container-high: #282a2e;
+    --surface-container-highest: #333539;
+    
+    --primary: #c3f5ff;
+    --primary-container: #00e5ff; /* Neon Cyan */
+    --secondary-container: #ff5713; /* Neon Orange */
+    --tertiary: #cdff13; /* Neon Lime */
+    
+    --outline-variant: #3b494c;
+    --text-muted: #bac9cc;
+    --text-dark: #00363d;
+}
+
+* { border-radius: 0; }
+.root-container { flex-grow: 1; background-color: var(--bg-surface); color: white; width: 100%; height: 100%; }
+
+/* Typography */
+.font-black { -unity-font-style: bold-and-italic; }
+.text-cyan { color: var(--primary-container); }
+.text-orange { color: var(--secondary-container); }
+.text-lime { color: var(--tertiary); }
+.text-muted { color: var(--text-muted); }
+
+/* TOP BAR */
+.top-bar { flex-direction: row; justify-content: space-between; align-items: center; padding: 16px 24px; background-color: rgba(17, 19, 24, 0.9); border-bottom-width: 1px; border-bottom-color: rgba(59, 73, 76, 0.3); }
+.top-bar-left { flex-direction: row; align-items: center; }
+.icon-box-cyan { width: 32px; height: 32px; background-color: var(--surface-container-high); border-left-width: 3px; border-left-color: var(--primary-container); align-items: center; justify-content: center; margin-right: 12px; }
+.top-bar-right { flex-direction: row; align-items: center; }
+.currency-badge { background-color: var(--surface-container-high); padding: 6px 16px; border-right-width: 2px; border-right-color: var(--primary-container); margin-right: 16px; }
+
+/* MAIN CONTENT */
+.main-content { padding: 24px; padding-bottom: 120px; flex-grow: 1; }
+
+/* SECTION: DAILY DEALS */
+.section-header-row { flex-direction: row; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; }
+.nav-arrows { flex-direction: row; }
+.arrow-btn { background-color: transparent; border-width: 1px; border-color: var(--outline-variant); color: white; width: 32px; height: 32px; margin-left: 8px; justify-content: center; align-items: center; font-size: 14px; transition: background-color 0.1s;}
+.arrow-btn:hover { background-color: var(--surface-container-high); }
+
+/* Deal Cards */
+.deals-container { flex-direction: row; justify-content: space-between; margin-bottom: 32px; }
+.deal-card { flex-basis: 48.5%; background-color: var(--surface-container-low); flex-direction: column; padding-bottom: 16px; border-bottom-width: 2px; border-bottom-color: transparent; }
+.deal-image-container { width: 100%; height: 180px; background-color: #000; margin-bottom: 16px; -unity-background-scale-mode: scale-and-crop; }
+.deal-content { padding: 0 16px; }
+.deal-title-row { flex-direction: row; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.discount-badge-orange { background-color: var(--secondary-container); color: #fff; padding: 2px 8px; font-size: 10px; -unity-font-style: bold; }
+
+/* Deal Card Stats */
+.deal-stats-row { flex-direction: row; justify-content: space-between; margin-bottom: 16px; }
+.stat-box { flex-basis: 48%; background-color: var(--surface-container-highest); padding: 8px; border-left-width: 2px; }
+.stat-box-lime { border-left-color: var(--tertiary); }
+.stat-box-gray { border-left-color: var(--outline-variant); }
+.stat-box-orange { border-left-color: var(--secondary-container); }
+.stat-box-red { border-left-color: #ffb4ab; }
+.stat-label { font-size: 8px; color: var(--text-muted); text-transform: uppercase; -unity-font-style: bold; margin-bottom: 4px; }
+.stat-value { font-size: 16px; color: #fff; -unity-font-style: bold-and-italic; }
+
+/* Claim Buttons */
+.claim-btn { padding: 12px; border-width: 0; font-size: 14px; -unity-font-style: bold-and-italic; text-transform: uppercase; color: var(--text-dark); transition: scale 0.1s; }
+.claim-btn:active { scale: 0.98 0.98; background-color: #fff; -unity-background-image-tint-color: #fff; }
+.btn-cyan { background-color: var(--primary-container); -unity-background-image-tint-color: var(--primary-container); }
+.btn-orange { background-color: var(--secondary-container); -unity-background-image-tint-color: var(--secondary-container); color: #fff; }
+
+/* SECTION: PERFORMANCE PARTS */
+.parts-header-row { flex-direction: row; align-items: center; margin-bottom: 16px; }
+.header-line { height: 1px; flex-grow: 1; background-color: var(--outline-variant); margin-left: 16px; }
+
+.parts-container { flex-direction: row; justify-content: space-between; }
+.part-item { flex-basis: 32%; background-color: var(--surface-container-low); padding: 12px; flex-direction: row; align-items: center; border-bottom-width: 2px; border-bottom-color: transparent; }
+.part-item:hover { border-bottom-color: var(--primary-container); }
+.part-img { width: 64px; height: 64px; background-color: var(--surface-container-highest); margin-right: 12px; -unity-background-scale-mode: scale-to-fit; }
+.part-info { flex-grow: 1; justify-content: center; }
+.part-title { font-size: 12px; -unity-font-style: bold-and-italic; color: var(--primary-container); text-transform: uppercase; }
+.part-subtitle { font-size: 8px; color: var(--text-muted); -unity-font-style: bold; text-transform: uppercase; margin-bottom: 4px; }
+.buy-btn { background-color: var(--surface-container-highest); color: #fff; border-width: 0; font-size: 8px; padding: 4px 8px; align-self: flex-end; -unity-font-style: bold; transition: background-color 0.1s; }
+.buy-btn:hover { background-color: var(--primary-container); color: var(--text-dark); }
+
+/* SECTION: CURRENCY PACKS */
+.packs-container { flex-direction: row; justify-content: space-between; margin-bottom: 32px; }
+.pack-card { flex-basis: 24%; background-color: var(--surface-container-low); border-width: 1px; border-color: var(--outline-variant); padding: 24px 16px; align-items: center; transition: border-color 0.1s; }
+.pack-card:hover { border-color: var(--primary-container); }
+.pack-badge { position: absolute; top: -8px; right: 16px; padding: 4px 8px; font-size: 8px; -unity-font-style: bold-and-italic; text-transform: uppercase; color: #111318; }
+.pack-badge-cyan { background-color: var(--primary-container); }
+.pack-badge-lime { background-color: var(--tertiary); }
+.pack-icon { width: 48px; height: 48px; background-color: transparent; margin-bottom: 12px; -unity-background-scale-mode: scale-to-fit; align-items: center; justify-content: center;}
+.pack-title { font-size: 14px; color: #fff; -unity-font-style: bold-and-italic; margin-bottom: 4px; text-transform: uppercase; text-align: center; white-space: normal; }
+.pack-amount { font-size: 12px; -unity-font-style: bold-and-italic; margin-bottom: 16px; }
+.pack-divider { width: 100%; height: 1px; background-color: var(--outline-variant); margin-bottom: 16px; }
+.pack-price { font-size: 16px; color: #fff; -unity-font-style: bold; }
+
+/* BOTTOM NAV BAR */
+.bottom-nav { position: absolute; bottom: 0; width: 100%; flex-direction: row; justify-content: space-around; background-color: rgba(17, 19, 24, 0.95); padding: 12px 0; border-top-width: 1px; border-top-color: rgba(59, 73, 76, 0.3); }
+.nav-item { align-items: center; color: rgba(195, 245, 255, 0.5); font-size: 10px; -unity-font-style: bold; text-transform: uppercase; }
+.nav-item-active { background-color: rgba(0, 229, 255, 0.1); color: var(--primary-container); padding: 8px 32px; border-bottom-width: 2px; border-bottom-color: var(--primary-container); }
+
+/* =========================================
+   SCROLLBAR STYLING (Cyberpunk Theme)
+   ========================================= */
+
+/* 1. Hide the chunky Up/Down arrow buttons */
+.unity-scroll-view .unity-scroller--vertical #unity-low-button,
+.unity-scroll-view .unity-scroller--vertical #unity-high-button {
+    display: none;
+}
+
+/* 2. The Tracker (The background track) */
+.unity-scroll-view .unity-scroller--vertical #unity-tracker {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: rgba(17, 19, 24, 0.8); 
+    border-width: 0; 
+    width: 4px; 
+    margin-left: 6px; 
+}
+
+/* 3. The Dragger (The part you actually grab/scroll) */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger {
+    background-image: none; /* <--- THE CRITICAL FIX */
+    background-color: #00E5FF; /* Hardcoded Neon Cyan */
+    border-radius: 4px; 
+    border-width: 0;
+    width: 8px; 
+    left: 4px; 
+}
+
+/* 4. The Dragger Touch Effect */
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:hover {
+    background-color: #c3f5ff; /* Slightly brighter when mouse hovers */
+}
+
+.unity-scroll-view .unity-scroller--vertical #unity-dragger:active {
+    background-color: #ffffff; /* Flashes white when touched */
+}
