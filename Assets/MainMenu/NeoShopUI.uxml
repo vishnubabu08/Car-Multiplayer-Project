@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/MainMenu/NeoShopStyles.uss?fileID=7433441132597879392&amp;guid=16392621fa87ff546adbc004edc45b8f&amp;type=3#NeoShopStyles"/>
+    <Style src="project://database/Assets/MainMenu/SharedStyles.uss?fileID=7433441132597879392&amp;guid=a4d3608c1c99ee94b84d7e1494041657&amp;type=3#SharedStyles"/>
     <ui:VisualElement class="root-container">
         <ui:VisualElement class="top-bar">
             <ui:VisualElement class="top-bar-left">

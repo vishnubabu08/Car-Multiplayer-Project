@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/MainMenu/GarageStyles.uss?fileID=7433441132597879392&amp;guid=caed80ddafd45d040b9b60efc277dcf4&amp;type=3#GarageStyles"/>
+    <Style src="project://database/Assets/MainMenu/SharedStyles.uss?fileID=7433441132597879392&amp;guid=a4d3608c1c99ee94b84d7e1494041657&amp;type=3#SharedStyles"/>
     <ui:VisualElement class="root-container" style="width: 100%; height: 100%;">
         <ui:VisualElement name="bg-image" class="background-image-container"/>
         <ui:VisualElement class="background-gradient"/>

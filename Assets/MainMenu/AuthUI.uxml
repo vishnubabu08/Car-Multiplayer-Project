@@ -1,0 +1,79 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenu/AuthStyles.uss?fileID=7433441132597879392&amp;guid=891f3d0ae6ac56b4883ac670b9eb67fb&amp;type=3#AuthStyles"/>
+    <ui:VisualElement class="root-container">
+        <ui:VisualElement name="bg-image" class="bg-image" style="background-image: url(&quot;project://database/Assets/DODGE(1).png?fileID=2800000&amp;guid=42a4008a1cc33324386879d44dd9a9a0&amp;type=3#DODGE(1)&quot;); background-color: rgb(0, 0, 0);"/>
+        <ui:VisualElement class="bg-gradient"/>
+        <ui:VisualElement class="top-bar">
+            <ui:VisualElement class="top-bar-left">
+                <ui:Label text="O" class="top-bar-icon"/>
+                <ui:Label text="PILOT AUTHENTICATION" class="font-bold-italic text-primary top-bar-title"/>
+            </ui:VisualElement>
+            <ui:Button text="⚙" class="btn-settings"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="main-content" style="background-image: none; -unity-background-image-tint-color: rgb(109, 85, 85);">
+            <ui:VisualElement class="login-wrapper" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);">
+                <ui:VisualElement class="tactical-header">
+                    <ui:VisualElement class="tactical-group">
+                        <ui:VisualElement class="status-indicator">
+                            <ui:VisualElement class="dot-amber"/>
+                            <ui:Label text="LINK_STATUS: STABLE" class="font-bold-italic status-text"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="status-indicator">
+                            <ui:VisualElement class="dot-orange"/>
+                            <ui:Label text="ENCRYPTION: ACTIVE" class="font-bold-italic status-text"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="V_4.0.2_APEX" class="font-bold-italic version-text"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="glass-panel">
+                    <ui:VisualElement class="corner-accent"/>
+                    <ui:VisualElement class="title-container">
+                        <ui:Label text="PILOT" class="font-bold-italic title-line-1" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:Label text="IDENTITY" class="font-bold-italic title-line-2" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                        <ui:VisualElement class="title-underline"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="input-group">
+                        <ui:Label text="PILOT_ID" class="font-bold-italic input-label"/>
+                        <ui:VisualElement class="input-row">
+                            <ui:TextField value="" placeholder="ENTER CALLSIGN" class="text-field"/>
+                            <ui:Label text="[ ID ]" class="input-icon"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="input-group">
+                        <ui:Label text="PASSCODE" class="font-bold-italic input-label"/>
+                        <ui:VisualElement class="input-row">
+                            <ui:TextField value="" placeholder="••••••••" password="true" class="text-field"/>
+                            <ui:Label text="[ PW ]" class="input-icon"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Button name="btn-authenticate" text="AUTHENTICATE" class="font-bold-italic btn-authenticate"/>
+                    <ui:VisualElement class="links-row">
+                        <ui:Label text="FORGOT_PASSCODE" class="font-bold-italic text-link"/>
+                        <ui:VisualElement class="link-dot"/>
+                        <ui:Label text="NEW_PILOT_REGISTRATION" class="font-bold-italic text-link"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="sync-divider-row">
+                        <ui:VisualElement class="sync-line"/>
+                        <ui:Label text="DIRECT_SYNC" class="font-bold-italic sync-text"/>
+                        <ui:VisualElement class="sync-line"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="social-grid">
+                        <ui:VisualElement class="btn-social">
+                            <ui:Label text="[D]" class="social-icon"/>
+                            <ui:Label text="DISCORD" class="font-bold-italic social-text"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="btn-social">
+                            <ui:Label text="[G]" class="social-icon"/>
+                            <ui:Label text="GOOGLE" class="font-bold-italic social-text"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="terminal-footer">
+                    <ui:Label text="SYSTEM_SECURE_NODE_99" class="footer-text"/>
+                    <ui:Label text="LATENCY: 12MS" class="footer-text"/>
+                    <ui:Label text="REGIONAL_SERVER: TOKYO_01" class="footer-text"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/MainMenu/NeonDriveStyles.uss?fileID=7433441132597879392&amp;guid=f03e6da12a99d3c43afcc2de11ded981&amp;type=3#NeonDriveStyles"/>
+    <Style src="project://database/Assets/MainMenu/SharedStyles.uss?fileID=7433441132597879392&amp;guid=a4d3608c1c99ee94b84d7e1494041657&amp;type=3#SharedStyles"/>
     <ui:VisualElement class="root-container">
         <ui:VisualElement name="bg-image" class="background-image-container"/>
         <ui:VisualElement class="background-gradient"/>

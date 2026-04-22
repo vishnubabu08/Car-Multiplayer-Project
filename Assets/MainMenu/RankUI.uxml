@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/MainMenu/RankStyles.uss?fileID=7433441132597879392&amp;guid=3a309426e2f99fa40b1c1e6af8cad961&amp;type=3#RankStyles"/>
+    <Style src="project://database/Assets/MainMenu/SharedStyles.uss?fileID=7433441132597879392&amp;guid=a4d3608c1c99ee94b84d7e1494041657&amp;type=3#SharedStyles"/>
     <ui:VisualElement class="root-container">
         <ui:VisualElement class="top-bar" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
             <ui:VisualElement class="top-bar-left">
