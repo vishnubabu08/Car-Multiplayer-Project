@@ -92,7 +92,7 @@
                 <ui:Label text="GARAGE" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
             </ui:VisualElement>
             <ui:VisualElement class="nav-item">
-                <ui:Label text="SOCIAL" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
+                <ui:Label text="TRACK" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
             </ui:VisualElement>
             <ui:VisualElement name="nav-race" class="nav-item nav-item-active">
                 <ui:Label text="RACE" style="font-size: 12px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
@@ -102,9 +102,6 @@
             </ui:VisualElement>
             <ui:VisualElement class="nav-item">
                 <ui:Label text="RANK" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
-            </ui:VisualElement>
-            <ui:VisualElement class="nav-item">
-                <ui:Label text="TRACK" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
             </ui:VisualElement>
             <ui:VisualElement class="nav-item">
                 <ui:Label text="SETTIGS" style="font-size: 10px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - cube2
+  - Over
+  - toDestroy
+  - cam
+  - Waypoint
   layers:
   - Default
   - TransparentFX

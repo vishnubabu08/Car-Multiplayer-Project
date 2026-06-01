@@ -12,7 +12,7 @@
             <ui:VisualElement class="top-bar-right">
                 <ui:VisualElement class="nav-links">
                     <ui:Label text="GARAGE" class="nav-link"/>
-                    <ui:Label text="SOCIAL" class="nav-link"/>
+                    <ui:Label text="TRACK" class="nav-link"/>
                     <ui:Label text="RACE" class="nav-link"/>
                     <ui:Label text="SHOP" class="nav-link"/>
                     <ui:Label text="RANK" class="nav-link nav-link-active"/>

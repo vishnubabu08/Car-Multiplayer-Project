@@ -139,7 +139,7 @@
                 <ui:Label text="GARAGE" style="font-size: 14px; -unity-font-style: bold-and-italic; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);"/>
             </ui:VisualElement>
             <ui:VisualElement class="nav-item" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
-                <ui:Label text="SOCIAL" class="font-label"/>
+                <ui:Label text="TRACK" class="font-label"/>
             </ui:VisualElement>
             <ui:VisualElement class="nav-item" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
                 <ui:Label text="RACE" class="font-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BrunoAceSC-Regular.ttf?fileID=12800000&amp;guid=68df1285e78444148b9780296a9c63cb&amp;type=3#BrunoAceSC-Regular&quot;);"/>

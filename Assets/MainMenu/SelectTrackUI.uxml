@@ -9,8 +9,6 @@
             </ui:VisualElement>
             <ui:VisualElement class="top-bar-right">
                 <ui:VisualElement class="nav-links">
-                    <ui:Label text="GARAGE" class="nav-link"/>
-                    <ui:Label text="RACE" class="nav-link nav-link-active"/>
                     <ui:Label text="LEADERBOARD" class="nav-link"/>
                     <ui:Label text="SETTINGS" class="nav-link"/>
                 </ui:VisualElement>
@@ -130,9 +128,6 @@
         <ui:VisualElement class="bottom-nav" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Audiowide-Regular.ttf?fileID=12800000&amp;guid=393cc287dbb587548b0cfad5063f5cdb&amp;type=3#Audiowide-Regular&quot;);">
             <ui:VisualElement class="nav-item">
                 <ui:Label text="GARAGE"/>
-            </ui:VisualElement>
-            <ui:VisualElement class="nav-item">
-                <ui:Label text="SOCIAL"/>
             </ui:VisualElement>
             <ui:VisualElement name="nav-race" class="nav-item nav-item-active">
                 <ui:Label text="RACE"/>

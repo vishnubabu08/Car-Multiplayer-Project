@@ -164,7 +164,7 @@
                 <ui:Label text="GARAGE"/>
             </ui:VisualElement>
             <ui:VisualElement class="nav-item">
-                <ui:Label text="SOCIAL"/>
+                <ui:Label text="TRACK"/>
             </ui:VisualElement>
             <ui:VisualElement class="nav-item">
                 <ui:Label text="RACE"/>

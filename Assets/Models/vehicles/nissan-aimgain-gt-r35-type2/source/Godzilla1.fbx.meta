@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: 2b4fe6e968f5b3346a2d6ff1bf423973
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NNissan_GTRNismoNRewardRecycled_2017_Wheel1A_3D_3DWheel1_d95be4
+    second: {fileID: 2100000, guid: e727384e76a396645b7c57811fb0599d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NNissan_GTRTNR0_2017_CallipersCalliperBadgeA_Material1
+    second: {fileID: 2100000, guid: beb7bd7d5196a044f8ea96943cf756c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NNissan_GTRTNR0_2017_CallipersCalliperGloss_Material1
+    second: {fileID: 2100000, guid: b9bb88b936d750d489f12b0cc3523e87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_surr
+    second: {fileID: 2100000, guid: 098af0ebcf15a1b47a340591c4ed8616, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: 7350ef78c0ee79a41841ac253f28e7ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017BadgeE_Material1
+    second: {fileID: 2100000, guid: 2140d12a66b80ec468f233db60c52a35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Base_Material1
+    second: {fileID: 2100000, guid: 269e1168632dd88499dd9be756b7d0c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Carbon1_Material_004
+    second: {fileID: 2100000, guid: cae030ce058654946a365a859cb8e3ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Coloured_Material1
+    second: {fileID: 2100000, guid: 09c0b0f98672718409f8f56318044a56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017EngineA_Material1
+    second: {fileID: 2100000, guid: 02a1ededf355789439b3ecb196ff5b5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Grille1E_Material1
+    second: {fileID: 2100000, guid: 7e3093fc01656fe46836ee7839472fa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Grille2E_Material1
+    second: {fileID: 2100000, guid: c2809d4162ec529499a18d5e3630ad38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Grille4E_Material1
+    second: {fileID: 2100000, guid: a5f0d0f9f8723f540bef6a2f167b0f8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Grille7A_Material1
+    second: {fileID: 2100000, guid: b074cbf59f142d347a5b2511d26689ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Grille8A_Material1
+    second: {fileID: 2100000, guid: 344f028f3554dc6478c5462bd0f842b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Grille9A_Material1
+    second: {fileID: 2100000, guid: fe67c18cc4e48184393779c4a4656d3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Hood4a_Grille1_Material1
+    second: {fileID: 2100000, guid: d5365d9f9df419b4b95f34a980b3b8ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017InteriorA_Material1
+    second: {fileID: 2100000, guid: 9049ceba946314f4c9da12af03add2a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017InteriorTillingColourZoneA_Material1
+    second: {fileID: 2100000, guid: 62139ae561ee2504aba154ade0eb91db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017LightE_Material1
+    second: {fileID: 2100000, guid: 98826f77d41aadb42a3867f8ac853c6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017ManufacturerPlateE_Material1
+    second: {fileID: 2100000, guid: b25c9817b8178a0419d1cdf2961bf4f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017PaintTNR_Material_002
+    second: {fileID: 2100000, guid: 626494bc70cefd3489e878c10c5bbe17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017SpecularTintE_Material1
+    second: {fileID: 2100000, guid: 04603ec06b9f0204ea86cf948eff7076, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017TexturedE_Material1
+    second: {fileID: 2100000, guid: 1a14243f7dd44514e9ac4ab17fde5749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nNissan_GTRTNR4_2017Window_Material1
+    second: {fileID: 2100000, guid: 3731a4bb4c84e9c449d7fd562e5c7f99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong2
+    second: {fileID: 2100000, guid: 7bea1fa9138068840a4d16a691b39150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong3
+    second: {fileID: 2100000, guid: 38ca5630f5a950648b478ad52a860e7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong5
+    second: {fileID: 2100000, guid: 0a27650ce0dd18e4290a410073f52828, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
