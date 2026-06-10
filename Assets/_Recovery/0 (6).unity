@@ -12484,6 +12484,7 @@ GameObject:
   - component: {fileID: 213849467}
   - component: {fileID: 213849466}
   - component: {fileID: 213849465}
+  - component: {fileID: 213849464}
   - component: {fileID: 213849463}
   - component: {fileID: 213849469}
   - component: {fileID: 213849472}
@@ -12517,6 +12518,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.99605775, z: 4.2039413}
   m_Center: {x: 0, y: 0.56209123, z: -0.023097038}
+--- !u!114 &213849464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213849462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e0587c07b3b974dada7067d62f109c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalPlayerInput
 --- !u!114 &213849465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12722,8 +12735,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213849462}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.6962499, z: -0, w: 0.71779954}
-  m_LocalPosition: {x: 4681.3, y: 4.13, z: 3519.4}
+  m_LocalRotation: {x: -0, y: -0.64538115, z: -0, w: 0.76386076}
+  m_LocalPosition: {x: 4690.9, y: 11, z: 3520.6}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12738,7 +12751,7 @@ Transform:
   - {fileID: 902695603}
   - {fileID: 1944715518}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -88.254, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -80.389, z: 0}
 --- !u!114 &213849469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12783,7 +12796,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 2000
+  MaxStep: 0
 --- !u!114 &213849471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12806,9 +12819,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 98511cf47fc6a534abd3546aad6c763c, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: CarDriver
   TeamId: 0
   m_UseChildSensors: 1
@@ -248912,7 +248925,7 @@ Transform:
   m_GameObject: {fileID: 661182492239040611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.64538115, z: -0, w: 0.76386076}
-  m_LocalPosition: {x: 4207.2, y: 11, z: 3543.8}
+  m_LocalPosition: {x: 4209.29, y: 11, z: 3556.14}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
