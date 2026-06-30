@@ -2,7 +2,7 @@
 - Project name: CarMultiplayer
 - Unity version: Unity 6000.3.16f1
 - Active game object:
-  - Name: Aston Martin enemy
-  - Tag: Player
+  - Name: AITrainingBox
+  - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

@@ -155,11 +155,12 @@ public class AITrainingDriver : Agent
         ca[2] = Input.GetKey(KeyCode.Space) ? 1f : 0f;
     }
 
-    private void OnTriggerEnter(Collider other)
+    // USE THIS FOR SOLID WALLS
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
-            AddReward(-1.0f);
+            AddReward(-20.0f); // Keep your heavy penalty!
             EndEpisode();
         }
     }
@@ -169,11 +170,12 @@ public class AITrainingDriver : Agent
         // Reset car
         transform.position = startPosition;
         transform.rotation = startRotation;
-        rb.linearVelocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero; // Note: if Unity complains about linearVelocity, use rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
         // Reset tracking
         currentWaypointIndex = 0;
+        totalWaypointsReached = 0; // <--- THIS NEW LINE FIXES THE BUG!
         episodeTimer = 0f;
         stuckTimer = 0f;
         lastPosition = startPosition;
