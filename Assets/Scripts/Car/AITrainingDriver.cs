@@ -1,4 +1,3 @@
-// AITrainingDriver.cs
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
@@ -12,8 +11,8 @@ public class AITrainingDriver : Agent
     public float waypointReachRadius = 8f;
 
     [Header("Training Settings")]
-    public float maxEpisodeTime = 60f;
-    public float minSpeedThreshold = 2f; // KMH - punish if stuck
+    public float maxEpisodeTime = 300f; // Max time before a forced reset (set to 99999 if just playing)
+    public float minSpeedThreshold = 2f;
     public float stuckCheckInterval = 5f;
 
     private ProCarController car;
@@ -26,6 +25,7 @@ public class AITrainingDriver : Agent
     private float stuckTimer = 0f;
     private Vector3 lastPosition;
     private int totalWaypointsReached = 0;
+    private float lastSteering = 0f;
 
     public override void Initialize()
     {
@@ -68,116 +68,129 @@ public class AITrainingDriver : Agent
         sensor.AddObservation(transform.up.y); // 1 = upright, -1 = flipped
 
         // Total: 7 observations
-        // Ray Perception Sensor handles the environment scanning
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        // --- 1. THE NEW 4-PEDAL SETUP ---
         float steering = Mathf.Clamp(actions.ContinuousActions[0], -1f, 1f);
-        float throttle = Mathf.Clamp(actions.ContinuousActions[1], 0f, 1f); // 0 to 1 only, no reverse
-        bool handbrake = actions.ContinuousActions[2] > 0.5f;
+        float throttle = Mathf.Clamp(actions.ContinuousActions[1], 0f, 1f);
+        float brakeReverse = Mathf.Clamp(actions.ContinuousActions[2], 0f, 1f);
+        bool handbrake = actions.ContinuousActions[3] > 0.5f;
+
+        // THE OVERRIDE: Prevent the AI from pressing Gas and Brake at the same time!
+        if (throttle > 0.1f)
+        {
+            brakeReverse = 0f; // If gas is pressed, force the brake to 0.
+        }
 
         VehicleInput input = new VehicleInput
         {
             steering = steering,
             throttle = throttle,
-            isBraking = false,
+            isBraking = brakeReverse > 0.1f,
             isHandbrake = handbrake,
             isBoosting = false
         };
         car.FeedInput(input);
 
-        // --- REWARDS ---
-
+        // ... (Keep everything else below this exactly the same)
+        // --- 2. TIMERS ---
         episodeTimer += Time.fixedDeltaTime;
         stuckTimer += Time.fixedDeltaTime;
 
-        // 1. Reward for moving toward waypoint
+        // --- 3. WAYPOINT REWARDS ---
         if (waypoints != null && waypoints.Length > 0)
         {
             Vector3 toWaypoint = waypoints[currentWaypointIndex].position - transform.position;
             float distToWaypoint = toWaypoint.magnitude;
 
-            // Small reward for facing and moving toward waypoint
-            float dotToWaypoint = Vector3.Dot(transform.forward, toWaypoint.normalized);
-            if (dotToWaypoint > 0.7f && car.KMPH > 10f)
-            {
-                AddReward(0.002f);
-            }
+            // FIX: Removed the "> 10f KMH" requirement. 
+            // Now it gets a tiny reward simply for looking at the waypoint, even if stopped.
+            if (Vector3.Dot(transform.forward, toWaypoint.normalized) > 0.7f)
+                AddReward(0.001f);
 
-            // Reached waypoint
             if (distToWaypoint < waypointReachRadius)
             {
                 AddReward(1.0f);
                 totalWaypointsReached++;
                 currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
-                Debug.Log($"Waypoint reached! Total: {totalWaypointsReached}");
             }
         }
 
-        // 2. Punish being flipped
-        if (transform.up.y < 0.3f)
+        // --- 4. SPEED ENCOURAGEMENT ---
+        Vector3 localVelocity = transform.InverseTransformDirection(rb.linearVelocity);
+
+        // FIX: Lowered the threshold from 5f to 1f, and slightly increased the reward.
+        // Now it gets rewarded the second it figures out how to creep forward!
+        if (localVelocity.z > 1f)
         {
-            AddReward(-0.5f);
-            EndEpisode();
-            return;
+            AddReward(localVelocity.z * 0.0005f);
         }
 
-        // 3. Stuck detection
+        // --- 5. THE SOFT STEERING TAX (Cures the "Sniffing Dog") ---
+        float steeringJerk = Mathf.Abs(steering - lastSteering);
+        AddReward(-steeringJerk * 0.0005f); // Very light penalty to stop rapid wiggling
+        lastSteering = steering;
+
+        // --- 6. STUCK PENALTY (TRAINING MODE) ---
         if (stuckTimer >= stuckCheckInterval)
         {
             float distanceMoved = Vector3.Distance(transform.position, lastPosition);
-            if (distanceMoved < 2f) // barely moved in 5 seconds
+            if (distanceMoved < minSpeedThreshold)
             {
-                AddReward(-0.5f);
-                EndEpisode();
-                return;
+                AddReward(-1.0f);
+                EndEpisode(); // <--- PUT THIS BACK IN FOR TRAINING!
+                return;       // <--- ADD THIS SO THE CODE STOPS HERE
             }
             lastPosition = transform.position;
             stuckTimer = 0f;
         }
 
-        // 4. Time penalty to encourage efficiency
-        AddReward(-0.0005f);
-
-        // 5. Episode timeout
-        if (episodeTimer >= maxEpisodeTime)
-        {
-            EndEpisode();
-        }
+        // Failsafe timeout only
+        if (episodeTimer >= maxEpisodeTime) EndEpisode();
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
+        // Updated to support manual testing with the 4-pedal system
         var ca = actionsOut.ContinuousActions;
-        ca[0] = Input.GetAxis("Horizontal");
-        ca[1] = Mathf.Max(0f, Input.GetAxis("Vertical"));
-        ca[2] = Input.GetKey(KeyCode.Space) ? 1f : 0f;
+        ca[0] = Input.GetAxis("Horizontal"); // A/D for steering
+        ca[1] = Mathf.Max(0f, Input.GetAxis("Vertical")); // W/Up Arrow for Gas
+        ca[2] = Mathf.Abs(Mathf.Min(0f, Input.GetAxis("Vertical"))); // S/Down Arrow for Brake/Reverse
+        ca[3] = Input.GetKey(KeyCode.Space) ? 1f : 0f; // Spacebar for Handbrake
     }
 
-    // USE THIS FOR SOLID WALLS
+    // --- 7. COLLISION HANDLING (NO TELEPORTING) ---
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-            AddReward(-20.0f); // Keep your heavy penalty!
-            EndEpisode();
+            // Just hurts the score. Car will bounce and keep going!
+            AddReward(-2.0f);
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Heavy penalty for hitting the player to teach avoidance.
+            AddReward(-5.0f);
         }
     }
 
     public override void OnEpisodeBegin()
     {
-        // Reset car
+        // Reset car physics
         transform.position = startPosition;
         transform.rotation = startRotation;
-        rb.linearVelocity = Vector3.zero; // Note: if Unity complains about linearVelocity, use rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        // Reset tracking
+        // Reset tracking variables
         currentWaypointIndex = 0;
-        totalWaypointsReached = 0; // <--- THIS NEW LINE FIXES THE BUG!
+        totalWaypointsReached = 0;
         episodeTimer = 0f;
         stuckTimer = 0f;
         lastPosition = startPosition;
+        lastSteering = 0f;
     }
 }
